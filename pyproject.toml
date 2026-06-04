@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TrackCodec"
+version = "0.1.0"
+description = "Track-aware mzML compression archive containers"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "TrackCodec contributors"},
+]
+dependencies = [
+    "numpy",
+    "lxml",
+    "tqdm",
+    "psutil",
+    "matplotlib",
+    "pandas",
+    "zstandard",
+    "brotli",
+    "pybind11",
+    "scipy",
+    "pyopenms",
+    "pyteomics",
+    "psims",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: C++",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.scripts]
+trackcodec = "TrackCodec.production.cli.main:main"
+trackcodec-compress = "TrackCodec.production.cli.compress_mzml:main"
+trackcodec-decompress = "TrackCodec.production.cli.decompress_archive:main"
+
+[tool.setuptools]
+include-package-data = true

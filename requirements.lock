@@ -1,0 +1,14 @@
+numpy==2.4.6
+lxml==6.1.1
+tqdm==4.67.3
+psutil==7.2.2
+matplotlib==3.10.9
+pandas==3.0.3
+zstandard==0.25.0
+brotli==1.2.0
+pybind11==3.0.4
+scipy==1.17.1
+pyopenms==3.5.0
+pyteomics==5.0
+psims==1.3.6
+Pillow==12.2.0

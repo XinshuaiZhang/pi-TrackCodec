@@ -1,0 +1,549 @@
+# TrackCodec Public Release
+
+TrackCodec is a section-aware mzML archive codec for mass-spectrometry data.
+This repository contains the core codec implementation and the public
+reproduction bundles used for the manuscript compression benchmark, downstream
+validation, and ablation analyses.
+
+The repository is organized so that it can be uploaded as a standalone GitHub
+source tree. Raw vendor files, large mzML inputs, and third-party executable
+tools are intentionally not bundled. Included CSV/JSON tables and generated
+figures are sufficient to reproduce the paper figures without rerunning the
+heavy external toolchain.
+
+## 1. Repository Contents
+
+```text
+TrackCodec_public_release/
+  production/                         Core compression/decompression code
+  runtime.py                          Unified CLI implementation
+  core_methods.py                     Public method/configuration helpers
+  setup.py, pyproject.toml            Python packaging metadata
+  requirements_trackcodec.txt         Runtime and plotting dependencies
+  requirements.lock                   Version-pinned environment used for smoke tests
+  experiments/benchmarks/
+    compression_benchmark_release/    Whole-file and section-level benchmark bundle
+  public_validation_bundle/
+    ablation/                         MS1/MS2 ablation code, inputs, outputs
+    downstreamvalidation/             DIA-NN, DDA search, XIC validation bundle
+  tests/                              Lightweight regression tests
+```
+
+## 2. Installation
+
+TrackCodec requires Python >= 3.10. Python 3.11 is recommended because the
+public bundle includes prebuilt native MS1 speedup modules for CPython 3.11 on
+Windows and Linux.
+
+### 2.1 Standard editable installation
+
+Use this mode when a C++17 compiler is available and native extensions can be
+built from source.
+
+```powershell
+cd <path-to-TrackCodec_public_release>
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -e .
+```
+
+On Linux/macOS, this builds the MS1 speedup extension and the optional native
+mzML writer. On Windows, the standard build compiles the required MS1 speedup
+extension; the native mzML writer is optional and disabled unless
+`TRACKCODEC_BUILD_NATIVE_WRITER=1` is set.
+
+### 2.2 Installation using included native modules
+
+Use this mode when the included native module matches the Python ABI. This was
+used for the public-release smoke test on Windows with CPython 3.11:
+
+```powershell
+cd <path-to-TrackCodec_public_release>
+$env:TRACKCODEC_SKIP_NATIVE_BUILD = "1"
+python -m pip install -e .
+Remove-Item Env:\TRACKCODEC_SKIP_NATIVE_BUILD
+```
+
+This skips native compilation and uses the ABI-compatible native module already
+present in the source tree. If native speedups are not detected, reinstall with
+a compiler-based build.
+
+### 2.3 Verify installation
+
+```powershell
+trackcodec --help
+trackcodec-compress --help
+trackcodec-decompress --help
+python -c "from TrackCodec.production.common.runtime_env import native_speedup_status; import json; print(json.dumps(native_speedup_status(), indent=2))"
+```
+
+The native speedup status should report `"available": true` for production
+compression/decompression.
+
+### 2.4 Native module policy
+
+The repository includes CPython 3.11 native extension binaries for the
+manuscript workstation smoke tests:
+
+| Module | Platform/ABI |
+| --- | --- |
+| `production/ms1/_cross_scan_speedups.cp311-win_amd64.pyd` | Windows, CPython 3.11, x86-64 |
+| `production/ms1/_cross_scan_speedups.cpython-311-x86_64-linux-gnu.so` | Linux, CPython 3.11, x86-64 |
+| `production/mzml/_native_writer.cpython-311-x86_64-linux-gnu.so` | Linux, CPython 3.11, x86-64 |
+
+For other Python versions or platforms, build the native extensions from
+source with `python -m pip install -e .`. The pinned package versions used for
+the local smoke-test environment are recorded in `requirements.lock`.
+
+## 3. Core Whole-File Workflow
+
+The unified command is:
+
+```powershell
+trackcodec <subcommand> [options]
+```
+
+Available subcommands:
+
+| Subcommand | Purpose |
+| --- | --- |
+| `compress` | Compress a standard mzML file into a `.tcarchive` file. |
+| `decompress` | Decode a `.tcarchive` file and optionally reconstruct mzML. |
+| `export-mzml` | Export an archive to standard mzML; equivalent to reconstruction. |
+| `validate` | Validate archive metadata or full mzML reconstruction. |
+| `launch` | Start a long-running TrackCodec job with status/log tracking. |
+| `status` | Inspect a job launched by `trackcodec launch`. |
+
+### 3.1 Compress mzML
+
+```powershell
+trackcodec compress `
+  --input <input.mzML> `
+  --output <output.tcarchive> `
+  --stats-json <compress_stats.json> `
+  --section-workers 8 `
+  --ms1-island-workers 2 `
+  --ms2-segment-workers 8 `
+  --cache-dir <cache_dir>
+```
+
+Compression parameters:
+
+| Option | Meaning |
+| --- | --- |
+| `--input` | Input mzML path. Required. |
+| `--output` | Output TrackCodec archive path. Required. |
+| `--stats-json` | Optional JSON file containing compression ratios, section sizes, codec configuration, and timing fields. |
+| `--section-workers` | Number of worker threads/processes for section-level work. If omitted, the runtime default is used. |
+| `--ms1-island-workers` | Number of workers for MS1 island extraction and track preparation. |
+| `--ms2-segment-workers` | Number of MS2 segment workers. A value of `0` in the low-level CLI reuses `--section-workers`; the unified CLI accepts an explicit integer or default. |
+| `--cache-dir` | Optional persistent cache for scan stores and intermediate section payloads. |
+| `--retain-zero-intensity-mz` | Preserve m/z coordinates for zero-intensity points. Enabled by default in the unified runtime. |
+| `--drop-zero-intensity-mz` | Do not preserve m/z coordinates for zero-intensity points. |
+
+Low-level equivalent:
+
+```powershell
+trackcodec-compress --input <input.mzML> --output <output.tcarchive> --stats-json <compress_stats.json>
+```
+
+The low-level command additionally supports progress output:
+
+| Option | Meaning |
+| --- | --- |
+| `--progress none|text|jsonl` | Emit no progress, human-readable progress, or JSON-lines progress to stderr. |
+| `--progress-interval-s` | Minimum interval between repeated progress messages for the same stage. |
+| `--parallel-ms1-ms2-processes` | Enable or disable process-level MS1/MS2 parallelism. |
+| `--memory-aware-parallel` | Enable memory-aware suppression of aggressive parallelism. |
+| `--parallel-min-available-gb` | Minimum available memory threshold used by memory-aware parallelism. |
+
+### 3.2 Decompress to mzML
+
+```powershell
+trackcodec decompress `
+  --archive <output.tcarchive> `
+  --output-mzml <reconstructed.mzML> `
+  --binary-compression preserve_template `
+  --section-workers 8 `
+  --ms2-segment-workers 8
+```
+
+Decompression parameters:
+
+| Option | Meaning |
+| --- | --- |
+| `--archive` | Input `.tcarchive` file. Required. |
+| `--output-mzml` | Reconstructed mzML output path. |
+| `--output-dir` | Optional directory for decoded section metadata and payload files. |
+| `--binary-compression` | mzML binary-array compression in the reconstructed file. `preserve_template` follows the source template, `none` writes uncompressed arrays, and `zlib` writes zlib-compressed arrays. |
+| `--section-workers` | Worker count for section decode. |
+| `--ms2-segment-workers` | Worker count for MS2 segment decode. |
+
+Low-level equivalent:
+
+```powershell
+trackcodec-decompress --input <output.tcarchive> --output-mzml <reconstructed.mzML>
+```
+
+### 3.3 Validate archive and reconstruction
+
+Quick validation decodes archive sections and reports metadata. It does not
+compare against the source mzML unless an output mzML is requested.
+
+```powershell
+trackcodec validate `
+  --archive <output.tcarchive> `
+  --level quick `
+  --summary-json <quick_validation.json>
+```
+
+Full validation reconstructs mzML and compares it with the original file.
+
+```powershell
+trackcodec validate `
+  --archive <output.tcarchive> `
+  --level full `
+  --original-mzml <input.mzML> `
+  --output-mzml <validation_reconstructed.mzML> `
+  --summary-json <validation_summary.json> `
+  --per-spectrum-csv <per_spectrum_validation.csv>
+```
+
+Validation parameters:
+
+| Option | Meaning |
+| --- | --- |
+| `--level quick` | Decode archive metadata/sections only. |
+| `--level full` | Reconstruct mzML and compare spectra against `--original-mzml`. |
+| `--original-mzml` | Required for `--level full`. |
+| `--summary-json` | JSON summary containing archive metadata and roundtrip comparison metrics. |
+| `--per-spectrum-csv` | Optional per-spectrum error table for full validation. |
+| `--binary-compression` | Reconstruction binary compression mode used during validation. |
+
+Important full-validation metrics include spectrum counts, missing spectrum
+counts, m/z and intensity error distributions, auxiliary binary equality, and
+intensity dtype consistency.
+
+### 3.4 Minimal smoke test
+
+This test uses any mzML file supplied by the user. The public repository does
+not include large raw mzML files.
+
+```powershell
+$env:REPO_ROOT = "<path-to-TrackCodec_public_release>"
+$env:INPUT_MZML = "<path-to-test.mzML>"
+$env:RUN_DIR = "<path-to-smoke-output>"
+
+trackcodec compress `
+  --input "$env:INPUT_MZML" `
+  --output "$env:RUN_DIR\test.tcarchive" `
+  --stats-json "$env:RUN_DIR\compress_stats.json" `
+  --section-workers 2 `
+  --ms1-island-workers 1 `
+  --ms2-segment-workers 2 `
+  --cache-dir "$env:RUN_DIR\cache"
+
+trackcodec decompress `
+  --archive "$env:RUN_DIR\test.tcarchive" `
+  --output-mzml "$env:RUN_DIR\test.reconstructed.mzML" `
+  --binary-compression preserve_template `
+  --section-workers 2 `
+  --ms2-segment-workers 2
+
+trackcodec validate `
+  --archive "$env:RUN_DIR\test.tcarchive" `
+  --level full `
+  --original-mzml "$env:INPUT_MZML" `
+  --output-mzml "$env:RUN_DIR\test.validation.mzML" `
+  --summary-json "$env:RUN_DIR\validation_summary.json" `
+  --per-spectrum-csv "$env:RUN_DIR\per_spectrum_validation.csv" `
+  --section-workers 2 `
+  --ms2-segment-workers 2
+```
+
+Successful completion creates a `.tcarchive`, reconstructed mzML files,
+compression statistics, a validation summary, and a per-spectrum validation
+table.
+
+## 4. Compression Benchmark Reproduction
+
+The benchmark bundle is located at:
+
+```text
+experiments/benchmarks/compression_benchmark_release/
+```
+
+It contains benchmark execution scripts, copied input summaries, reference
+metadata, combined output tables, and generated paper figures.
+
+### 4.1 Reproduce whole-file benchmark figures from included tables
+
+Generate the original SVG/HTML figure set:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\plot_combined_benchmark_summaries_svg.py" `
+  --input full8="$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\inputs\whole_file_summaries\full8_summary.csv" `
+  --input data_stackzdpd="$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\inputs\whole_file_summaries\data_stackzdpd_summary.csv" `
+  --input data_stackzdpd="$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\inputs\whole_file_summaries\data_stackzdpd_aif_summary.csv" `
+  --exclude-file 01625b_GA1-TUM_first_pool_1_01_01-DDA-1h-R2.uncompressed.mzML `
+  --vendor-size-table "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\inputs\refs\compression_ratio_tables_with_ms_format.md"
+```
+
+Generate Matplotlib PNG/PDF/SVG figures:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\plot_benchmark_figures_matplotlib.py" `
+  --combined-dir "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\outputs\combined_release"
+```
+
+Single-figure update:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\plot_benchmark_figures_matplotlib.py" `
+  --combined-dir "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\outputs\combined_release" `
+  --only-plot combined_compression_ratio_distribution
+```
+
+### 4.2 Recompute section-level benchmark tables and figures
+
+TrackCodec MS1/MS2 section table:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\summarize_trackcodec_section_benchmark.py"
+```
+
+ZDPD section table:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\compute_zdpd_section_from_aird.py" `
+  --method zdpd `
+  --label zdpd_baseline `
+  --display-name ZDPD
+```
+
+AirdPro Default section table:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\compute_zdpd_section_from_aird.py" `
+  --method airdpro `
+  --label airdpro_default `
+  --display-name "AirdPro Default" `
+  --output-csv "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\outputs\combined_release\tables\airdpro_default_aird_section_benchmark.csv"
+```
+
+Raw-array backend baselines:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\compute_section_raw_backend_baselines.py"
+```
+
+Section-level figures:
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\plot_section_advantage_benchmark.py"
+```
+
+### 4.3 Run new whole-file benchmarks
+
+Running new compression benchmarks requires external tools for non-TrackCodec
+methods. The script can still run TrackCodec-only benchmarks if only
+TrackCodec is available.
+
+```powershell
+python -B "$env:REPO_ROOT\experiments\benchmarks\compression_benchmark_release\scripts\benchmark_compression_methods.py" `
+  --input-list <two-supported-mzML-paths.txt> `
+  --sort-by-size-desc `
+  --workers 2 `
+  --methods trackcodec `
+  --trackcodec-python <python-with-trackcodec-installed> `
+  --output-root <benchmark-output-directory> `
+  --resume
+```
+
+Key benchmark parameters:
+
+| Option | Meaning |
+| --- | --- |
+| `--input` | mzML/mzXML file or directory to benchmark. |
+| `--input-list` | Text file containing one input path per line. This is preferred for smoke tests because it makes the selected file scope deterministic. |
+| `--recursive` | Recursively discover files in an input directory. |
+| `--sort-by-size-desc` | Run larger files before smaller files. |
+| `--max-files` | Restrict the number of discovered files for smoke tests; omit for a formal full run. |
+| `--workers` | Number of files processed concurrently. |
+| `--methods` | Method list, e.g. `trackcodec`, `airdpro`, `zdpd`, `msconvert_gzip`. |
+| `--skip-methods` | Remove selected methods from the requested method list. |
+| `--output-root` | Explicit run output directory. |
+| `--resume` | Reuse completed per-file method outputs when present. |
+| `--trackcodec-python` | Python executable used for TrackCodec compression. |
+
+External methods require their executables/configurations to be available on
+the host and are documented in
+`experiments/benchmarks/compression_benchmark_release/README.md`.
+
+## 5. Downstream Validation Reproduction
+
+Downstream validation materials are located at:
+
+```text
+public_validation_bundle/downstreamvalidation/
+```
+
+The figure-only workflow uses included tables and does not rerun DIA-NN,
+MSFragger, Philosopher, IonQuant, or XIC extraction:
+
+```powershell
+python -B "$env:REPO_ROOT\public_validation_bundle\downstreamvalidation\scripts\run_downstream_public_figures.py"
+```
+
+Primary outputs:
+
+```text
+public_validation_bundle/downstreamvalidation/outputs/search_validation_figures/
+public_validation_bundle/downstreamvalidation/outputs/stream_loss_downstream24_top2500/
+```
+
+Heavy workflow scripts are also included:
+
+| Script | Purpose |
+| --- | --- |
+| `validate_trackcodec_outputs.py` | Roundtrip validation, XIC extraction, Top-K stream-loss summaries. |
+| `run_full_downstream_validation.py` | DIA-NN and MSFragger/Philosopher/IonQuant validation orchestration. |
+| `summarize_psm_precursor_recovery.py` | DDA PSM and peptide-ion recovery table generation. |
+| `plot_search_validation_results.py` | DIA-NN and DDA/IonQuant figure generation from search outputs. |
+
+Heavy reruns require the relevant external tools, raw/reconstructed mzML paths,
+FASTA files, and search parameter files. See
+`public_validation_bundle/downstreamvalidation/README.md` for full command
+examples.
+
+## 6. Ablation Reproduction
+
+Ablation materials are located at:
+
+```text
+public_validation_bundle/ablation/
+```
+
+One-shot figure reproduction:
+
+```powershell
+python -B "$env:REPO_ROOT\public_validation_bundle\ablation\scripts\run_ablation_unified30.py"
+```
+
+Primary outputs:
+
+```text
+public_validation_bundle/ablation/outputs/ms1_ablation_unified30/
+public_validation_bundle/ablation/outputs/ms2_ablation_unified30/
+```
+
+The ablation workflow uses the unified 30-file scope recorded in:
+
+```text
+public_validation_bundle/ablation/inputs/unified30_file_scope.txt
+```
+
+See `public_validation_bundle/ablation/README.md` for individual MS1 and MS2
+aggregation, plotting commands, and the optional raw-mzML fresh rerun of the
+MS1 A0/A7 intensity-isolation ablation. The A7 rerun uses the explicit
+ablation-only `stackzdpd_passthrough` mode in
+`production/ms1/cross_scan_codec.py`.
+
+## 7. External Tool Requirements
+
+TrackCodec core compression and decompression do not require DIA-NN,
+MSFragger, Philosopher, IonQuant, AirdPro, MassComp, mspack, or ProteoWizard.
+Those tools are required only for rerunning external-method benchmarks or
+downstream search validations from raw data.
+
+The public repository therefore includes:
+
+- TrackCodec source code.
+- Benchmark/validation/ablation scripts.
+- CSV/JSON/TSV inputs needed for figure reproduction.
+- Generated paper figures.
+
+The public repository does not include:
+
+- Large original mzML/raw/vendor files.
+- Third-party executable installers.
+- Licensed or registration-gated software binaries.
+
+### 7.1 Tool versions used for the manuscript benchmark and validation
+
+The local workstation used for the current benchmark/validation run used the
+following toolchain. Reproducing the exact external-method results requires the
+same or functionally equivalent versions and configurations.
+
+| Tool | Manuscript role | Version or local build | Modification status |
+| --- | --- | --- | --- |
+| Python | TrackCodec runtime and plotting | 3.11.15 | Unmodified. |
+| pyOpenMS/OpenMS | OpenMS helper workflows and feature/format tooling | pyOpenMS 3.5.0; OpenMS FileConverter 3.5.0 | Unmodified. |
+| ProteoWizard `msconvert` | mzML/mzXML conversion; zlib/gzip/Numpress baselines | 3.0.21229.9668f52 | Unmodified installer extraction. |
+| DIA-NN | DIA/AIF precursor, peptide, and protein-group validation | 2.5.1 Academia | Unmodified. |
+| MSFragger | DDA/ETD peptide-spectrum matching | 4.4.1 | Unmodified. |
+| Philosopher | Peptide/protein FDR filtering and reporting | v5.1.0, build 202311202158 | Unmodified. |
+| IonQuant | DDA quantification and molecular-level recovery | 1.11.20 | Unmodified. |
+| mspack | Whole-file compression baseline | Locally rebuilt benchmark binary | Windows large-file XML length handling and mzML decode success return-code fixes applied for the manuscript benchmark. |
+| MassComp | Whole-file compression baseline after mzML-to-mzXML conversion | Local 64-bit-safe build when present | Wrapper/build avoids large mzXML file-length overflow. |
+| AirdPro Default | Whole-file and section-level `.aird` baseline | AirdPro 6.0.3 local copy | Config set to mz precision 6 and retain zero-intensity points. |
+| ZDPD / StackZDPD | AirdPro-family baselines | Local AirdPro wrapper/configs | StackZDPD uses a local stack-tail bridge; mz6 Int32 overflow remains a documented format limitation for some files. |
+
+Important benchmark normalization choices:
+
+- mspack mzML inputs are normalized by `msconvert --mzML --noindex --mz64 --inten32`.
+- MassComp mzML inputs are converted by `msconvert --mzXML --mz64 --inten32`.
+- msconvert zlib/gzip baselines use ProteoWizard command options `--zlib` and `--gzip`; no custom compression level is passed.
+- msconvert Numpress uses `--zlib --numpressAll`; no custom Numpress accuracy flags are passed.
+- AirdPro Default uses mz precision 6 and retains zero-intensity points.
+
+Detailed benchmark command templates and third-party tool notes are in
+`experiments/benchmarks/compression_benchmark_release/README.md`.
+
+## 8. Output Index
+
+An index of important public figures and file scopes is provided in:
+
+```text
+public_validation_bundle/FIGURE_LINKS_AND_FILE_LISTS.md
+```
+
+Benchmark figures are under:
+
+```text
+experiments/benchmarks/compression_benchmark_release/outputs/combined_release/plots/
+```
+
+Downstream and ablation figures are under:
+
+```text
+public_validation_bundle/downstreamvalidation/outputs/
+public_validation_bundle/ablation/outputs/
+```
+
+## 9. Release Verification Status
+
+This public-release tree was tested in a fresh Python virtual environment using
+the included source tree and external mzML files. The following checks were
+completed successfully or are explicitly tracked:
+
+- Editable installation with an ABI-compatible prebuilt native MS1 speedup
+  module using `TRACKCODEC_SKIP_NATIVE_BUILD=1`.
+- `trackcodec --help`, `trackcodec-compress --help`, and
+  `trackcodec-decompress --help`.
+- Native speedup detection with `native_speedup_status()`, reporting
+  `available = true`.
+- Whole-file compression of an external mzML file to `.tcarchive`.
+- Decompression of the generated `.tcarchive` back to mzML.
+- Full validation against the original mzML, including generation of
+  `validation_summary.json` and `per_spectrum_validation.csv`.
+- Benchmark runner smoke test on explicitly selected full8 mzML files using
+  `benchmark_compression_methods.py --input-list ... --methods trackcodec`.
+- Benchmark Matplotlib figure regeneration from included benchmark CSV tables.
+- Ablation figure reproduction from included ablation inputs.
+- Downstream validation figure reproduction from included downstream summary
+  tables.
+The smoke-test archive generated during verification had a whole-file
+compression ratio of approximately 5.43x relative to decoded raw section bytes
+and approximately 4.76x relative to the input mzML file size. The full
+validation summary reported matching spectrum identifiers and no missing
+original or reconstructed spectra for the tested file.

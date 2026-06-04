@@ -1,0 +1,13 @@
+numpy
+lxml
+tqdm
+psutil
+matplotlib
+pandas
+zstandard
+brotli
+pybind11
+scipy
+pyopenms
+pyteomics
+psims

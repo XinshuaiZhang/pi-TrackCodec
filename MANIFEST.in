@@ -1,0 +1,12 @@
+include README.md
+include requirements_trackcodec.txt
+include requirements.lock
+include build_native.sh
+recursive-include production *.py *.cpp *.pyd *.so
+recursive-include experiments *.py *.sh *.java *.md *.txt *.csv *.json *.tsv *.svg *.png *.pdf
+recursive-include public_validation_bundle *.py *.md *.txt *.csv *.json *.tsv *.svg *.png *.pdf
+include tests/__init__.py
+recursive-exclude * __pycache__ *.py[cod] *.bak* *~
+prune build
+prune dist
+prune *.egg-info
