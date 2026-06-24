@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="720" viewBox="0 0 940 720" role="img">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<line x1="170.00" y1="48.00" x2="170.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="170.00" y1="684.00" x2="170.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="170.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">0</text>
+<line x1="292.00" y1="48.00" x2="292.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="292.00" y1="684.00" x2="292.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="292.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">5</text>
+<line x1="414.00" y1="48.00" x2="414.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="414.00" y1="684.00" x2="414.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="414.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">10</text>
+<line x1="536.00" y1="48.00" x2="536.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="536.00" y1="684.00" x2="536.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="536.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">15</text>
+<line x1="658.00" y1="48.00" x2="658.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="658.00" y1="684.00" x2="658.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="658.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">20</text>
+<line x1="780.00" y1="48.00" x2="780.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="780.00" y1="684.00" x2="780.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="780.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">25</text>
+<line x1="902.00" y1="48.00" x2="902.00" y2="684.00" stroke="#E5E7EB" stroke-width="0.90"/>
+<line x1="902.00" y1="684.00" x2="902.00" y2="688.00" stroke="#111827" stroke-width="1.00"/>
+<text x="902.00" y="702.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#6B7280">30</text>
+<line x1="170.00" y1="48.00" x2="170.00" y2="684.00" stroke="#111827" stroke-width="1.00"/>
+<line x1="170.00" y1="684.00" x2="902.00" y2="684.00" stroke="#111827" stroke-width="1.00"/>
+<text x="170.00" y="22.00" font-size="15.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="700" text-anchor="start" fill="#111827">MS2 ablation: archive size penalty vs B0</text>
+<text x="536.00" y="712.00" font-size="12.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">Archive size increase vs B0 (%)</text>
+<line x1="480.45" y1="48.00" x2="480.45" y2="684.00" stroke="#355c7d" stroke-width="1.20" stroke-dasharray="5,4"/>
+<text x="486.45" y="62.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#355c7d">aggregate = 12.72%</text>
+<text x="160.00" y="64.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File9</text>
+<rect x="170.00" y="53.00" width="538.14" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="714.14" y="64.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">22.1%</text>
+<text x="160.00" y="84.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File3</text>
+<rect x="170.00" y="73.00" width="532.12" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="708.12" y="84.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">21.8%</text>
+<text x="160.00" y="104.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File8</text>
+<rect x="170.00" y="93.00" width="531.47" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="707.47" y="104.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">21.8%</text>
+<text x="160.00" y="124.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File22</text>
+<rect x="170.00" y="113.00" width="458.97" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="634.97" y="124.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">18.8%</text>
+<text x="160.00" y="144.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File15</text>
+<rect x="170.00" y="133.00" width="440.71" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="616.71" y="144.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">18.1%</text>
+<text x="160.00" y="164.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File16</text>
+<rect x="170.00" y="153.00" width="439.38" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="615.38" y="164.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">18.0%</text>
+<text x="160.00" y="184.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File21</text>
+<rect x="170.00" y="173.00" width="435.21" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="611.21" y="184.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">17.8%</text>
+<text x="160.00" y="204.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File18</text>
+<rect x="170.00" y="193.00" width="431.94" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="607.94" y="204.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">17.7%</text>
+<text x="160.00" y="224.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File14</text>
+<rect x="170.00" y="213.00" width="406.26" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="582.26" y="224.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">16.7%</text>
+<text x="160.00" y="244.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File11</text>
+<rect x="170.00" y="233.00" width="380.96" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="556.96" y="244.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">15.6%</text>
+<text x="160.00" y="264.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File12</text>
+<rect x="170.00" y="253.00" width="376.51" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="552.51" y="264.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">15.4%</text>
+<text x="160.00" y="284.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File27</text>
+<rect x="170.00" y="273.00" width="346.95" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="522.95" y="284.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">14.2%</text>
+<text x="160.00" y="304.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File4</text>
+<rect x="170.00" y="293.00" width="298.60" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="474.60" y="304.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">12.2%</text>
+<text x="160.00" y="324.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File23</text>
+<rect x="170.00" y="313.00" width="283.35" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="459.35" y="324.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">11.6%</text>
+<text x="160.00" y="344.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File26</text>
+<rect x="170.00" y="333.00" width="267.29" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="443.29" y="344.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">11.0%</text>
+<text x="160.00" y="364.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File24</text>
+<rect x="170.00" y="353.00" width="247.69" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="423.69" y="364.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">10.2%</text>
+<text x="160.00" y="384.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File25</text>
+<rect x="170.00" y="373.00" width="234.67" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="410.67" y="384.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">9.6%</text>
+<text x="160.00" y="404.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File10</text>
+<rect x="170.00" y="393.00" width="220.40" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="396.40" y="404.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">9.0%</text>
+<text x="160.00" y="424.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File20</text>
+<rect x="170.00" y="413.00" width="218.57" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="394.57" y="424.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">9.0%</text>
+<text x="160.00" y="444.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File17</text>
+<rect x="170.00" y="433.00" width="213.14" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="389.14" y="444.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">8.7%</text>
+<text x="160.00" y="464.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File19</text>
+<rect x="170.00" y="453.00" width="192.65" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="368.65" y="464.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">7.9%</text>
+<text x="160.00" y="484.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File13</text>
+<rect x="170.00" y="473.00" width="165.81" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="341.81" y="484.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">6.8%</text>
+<text x="160.00" y="504.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File29</text>
+<rect x="170.00" y="493.00" width="163.41" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="339.41" y="504.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">6.7%</text>
+<text x="160.00" y="524.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File5</text>
+<rect x="170.00" y="513.00" width="117.32" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="293.32" y="524.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">4.8%</text>
+<text x="160.00" y="544.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File1</text>
+<rect x="170.00" y="533.00" width="110.58" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="286.58" y="544.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">4.5%</text>
+<text x="160.00" y="564.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File7</text>
+<rect x="170.00" y="553.00" width="74.79" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="250.79" y="564.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">3.1%</text>
+<text x="160.00" y="584.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File30</text>
+<rect x="170.00" y="573.00" width="58.93" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="234.93" y="584.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">2.4%</text>
+<text x="160.00" y="604.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File6</text>
+<rect x="170.00" y="593.00" width="54.16" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="230.16" y="604.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">2.2%</text>
+<text x="160.00" y="624.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File2</text>
+<rect x="170.00" y="613.00" width="22.76" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="198.76" y="624.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">0.9%</text>
+<text x="160.00" y="644.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">File28</text>
+<rect x="170.00" y="633.00" width="7.82" height="14.00" fill="#f67280" stroke="none" opacity="0.900" rx="0.00"/>
+<text x="183.82" y="644.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#6B7280">0.3%</text>
+</svg>

@@ -1,0 +1,530 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="930" height="392" viewBox="0 0 930 392" role="img">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="24.00" y="30.00" font-size="15.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="700" text-anchor="start" fill="#111827">MS1 ablation: per-file size change vs A0</text>
+<text x="96.00" y="74.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A0 Full</text>
+<rect x="106.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="132.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="158.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="184.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="210.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="236.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="262.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="288.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="314.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="340.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="366.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="392.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="418.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="444.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="470.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="496.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="522.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="548.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="574.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="600.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="626.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="652.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="678.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="704.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="730.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="756.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="782.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="808.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="834.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="860.00" y="58.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="74.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<text x="96.00" y="98.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A1 no cross-scan</text>
+<rect x="106.00" y="82.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="132.00" y="82.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="158.00" y="82.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="184.00" y="82.00" width="25.00" height="23.00" fill="#DEE4EA" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+9</text>
+<rect x="210.00" y="82.00" width="25.00" height="23.00" fill="#5F7E98" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+45</text>
+<rect x="236.00" y="82.00" width="25.00" height="23.00" fill="#5C7C96" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="262.00" y="82.00" width="25.00" height="23.00" fill="#618099" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+45</text>
+<rect x="288.00" y="82.00" width="25.00" height="23.00" fill="#62809A" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="314.00" y="82.00" width="25.00" height="23.00" fill="#64829B" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="340.00" y="82.00" width="25.00" height="23.00" fill="#62819A" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="366.00" y="82.00" width="25.00" height="23.00" fill="#64829B" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="392.00" y="82.00" width="25.00" height="23.00" fill="#64829B" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="418.00" y="82.00" width="25.00" height="23.00" fill="#64829B" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="444.00" y="82.00" width="25.00" height="23.00" fill="#4A6D8A" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+51</text>
+<rect x="470.00" y="82.00" width="25.00" height="23.00" fill="#5B7A95" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="496.00" y="82.00" width="25.00" height="23.00" fill="#4E708D" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+50</text>
+<rect x="522.00" y="82.00" width="25.00" height="23.00" fill="#62809A" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+44</text>
+<rect x="548.00" y="82.00" width="25.00" height="23.00" fill="#5B7A95" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="574.00" y="82.00" width="25.00" height="23.00" fill="#5B7B95" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="600.00" y="82.00" width="25.00" height="23.00" fill="#5B7B96" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="626.00" y="82.00" width="25.00" height="23.00" fill="#5B7B95" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="652.00" y="82.00" width="25.00" height="23.00" fill="#5B7B95" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="678.00" y="82.00" width="25.00" height="23.00" fill="#577793" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+48</text>
+<rect x="704.00" y="82.00" width="25.00" height="23.00" fill="#5C7C96" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+46</text>
+<rect x="730.00" y="82.00" width="25.00" height="23.00" fill="#587894" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+47</text>
+<rect x="756.00" y="82.00" width="25.00" height="23.00" fill="#4C6F8C" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+51</text>
+<rect x="782.00" y="82.00" width="25.00" height="23.00" fill="#66839C" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+43</text>
+<rect x="808.00" y="82.00" width="25.00" height="23.00" fill="#557692" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+48</text>
+<rect x="834.00" y="82.00" width="25.00" height="23.00" fill="#446887" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+53</text>
+<rect x="860.00" y="82.00" width="25.00" height="23.00" fill="#355C7D" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="98.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+57</text>
+<text x="96.00" y="122.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A2 no equal-fid</text>
+<rect x="106.00" y="106.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="132.00" y="106.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="158.00" y="106.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-0</text>
+<rect x="184.00" y="106.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="210.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="236.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="262.00" y="106.00" width="25.00" height="23.00" fill="#FBFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="288.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="314.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="340.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="366.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="392.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="418.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="444.00" y="106.00" width="25.00" height="23.00" fill="#FDFDFE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="470.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="496.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="522.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="548.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="574.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="600.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="626.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="652.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="678.00" y="106.00" width="25.00" height="23.00" fill="#FBFCFC" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="704.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="730.00" y="106.00" width="25.00" height="23.00" fill="#FCFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="756.00" y="106.00" width="25.00" height="23.00" fill="#FBFCFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="782.00" y="106.00" width="25.00" height="23.00" fill="#FDFEFE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="808.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="834.00" y="106.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="860.00" y="106.00" width="25.00" height="23.00" fill="#FDFDFE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="122.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<text x="96.00" y="146.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A3 lossless</text>
+<rect x="106.00" y="130.00" width="25.00" height="23.00" fill="#F67280" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-3</text>
+<rect x="132.00" y="130.00" width="25.00" height="23.00" fill="#F67280" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-3</text>
+<rect x="158.00" y="130.00" width="25.00" height="23.00" fill="#F67987" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-3</text>
+<rect x="184.00" y="130.00" width="25.00" height="23.00" fill="#D1DAE1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="210.00" y="130.00" width="25.00" height="23.00" fill="#F1F3F6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+4</text>
+<rect x="236.00" y="130.00" width="25.00" height="23.00" fill="#F4F6F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="262.00" y="130.00" width="25.00" height="23.00" fill="#F5F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="288.00" y="130.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="314.00" y="130.00" width="25.00" height="23.00" fill="#FAFBFB" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+2</text>
+<rect x="340.00" y="130.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="366.00" y="130.00" width="25.00" height="23.00" fill="#FFFEFE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-0</text>
+<rect x="392.00" y="130.00" width="25.00" height="23.00" fill="#F8FAFB" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+2</text>
+<rect x="418.00" y="130.00" width="25.00" height="23.00" fill="#F8F9FA" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+2</text>
+<rect x="444.00" y="130.00" width="25.00" height="23.00" fill="#D9E0E7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+11</text>
+<rect x="470.00" y="130.00" width="25.00" height="23.00" fill="#EAEEF2" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="496.00" y="130.00" width="25.00" height="23.00" fill="#D4DDE4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+12</text>
+<rect x="522.00" y="130.00" width="25.00" height="23.00" fill="#EEF2F4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="548.00" y="130.00" width="25.00" height="23.00" fill="#FDE1E4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-1</text>
+<rect x="574.00" y="130.00" width="25.00" height="23.00" fill="#FDE6E9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-1</text>
+<rect x="600.00" y="130.00" width="25.00" height="23.00" fill="#FDFDFE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="626.00" y="130.00" width="25.00" height="23.00" fill="#FDE3E6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-1</text>
+<rect x="652.00" y="130.00" width="25.00" height="23.00" fill="#FEF0F1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-0</text>
+<rect x="678.00" y="130.00" width="25.00" height="23.00" fill="#F9FAFB" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+2</text>
+<rect x="704.00" y="130.00" width="25.00" height="23.00" fill="#FBBDC4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-2</text>
+<rect x="730.00" y="130.00" width="25.00" height="23.00" fill="#FEF2F4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">-0</text>
+<rect x="756.00" y="130.00" width="25.00" height="23.00" fill="#E1E7EC" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+8</text>
+<rect x="782.00" y="130.00" width="25.00" height="23.00" fill="#FCFDFD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+1</text>
+<rect x="808.00" y="130.00" width="25.00" height="23.00" fill="#EDF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="834.00" y="130.00" width="25.00" height="23.00" fill="#C2CED8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+17</text>
+<rect x="860.00" y="130.00" width="25.00" height="23.00" fill="#D7DEE5" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="146.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+11</text>
+<text x="96.00" y="170.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A4 no sidecar</text>
+<rect x="106.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="132.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="158.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="184.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="210.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="236.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="262.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="288.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="314.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="340.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="366.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="392.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="418.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="444.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="470.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="496.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="522.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="548.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="574.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="600.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="626.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="652.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="678.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="704.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="730.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="756.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="782.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="808.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="834.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<rect x="860.00" y="154.00" width="25.00" height="23.00" fill="#FFFFFF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="170.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+0</text>
+<text x="96.00" y="194.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A5 zlib</text>
+<rect x="106.00" y="178.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="132.00" y="178.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="158.00" y="178.00" width="25.00" height="23.00" fill="#F3F5F7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="184.00" y="178.00" width="25.00" height="23.00" fill="#F1F3F6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+4</text>
+<rect x="210.00" y="178.00" width="25.00" height="23.00" fill="#E1E7EC" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+8</text>
+<rect x="236.00" y="178.00" width="25.00" height="23.00" fill="#DFE6EB" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+9</text>
+<rect x="262.00" y="178.00" width="25.00" height="23.00" fill="#E7EBEF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="288.00" y="178.00" width="25.00" height="23.00" fill="#E4E9ED" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+8</text>
+<rect x="314.00" y="178.00" width="25.00" height="23.00" fill="#E2E8EC" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+8</text>
+<rect x="340.00" y="178.00" width="25.00" height="23.00" fill="#E6EBEF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="366.00" y="178.00" width="25.00" height="23.00" fill="#E8ECF0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="392.00" y="178.00" width="25.00" height="23.00" fill="#E6EBEF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="418.00" y="178.00" width="25.00" height="23.00" fill="#E3E9ED" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+8</text>
+<rect x="444.00" y="178.00" width="25.00" height="23.00" fill="#CCD5DE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+15</text>
+<rect x="470.00" y="178.00" width="25.00" height="23.00" fill="#E0E6EB" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+9</text>
+<rect x="496.00" y="178.00" width="25.00" height="23.00" fill="#DAE1E7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+10</text>
+<rect x="522.00" y="178.00" width="25.00" height="23.00" fill="#E1E7EC" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+8</text>
+<rect x="548.00" y="178.00" width="25.00" height="23.00" fill="#F4F6F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="574.00" y="178.00" width="25.00" height="23.00" fill="#F4F6F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="600.00" y="178.00" width="25.00" height="23.00" fill="#F4F6F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="626.00" y="178.00" width="25.00" height="23.00" fill="#F5F7F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="652.00" y="178.00" width="25.00" height="23.00" fill="#F5F7F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="678.00" y="178.00" width="25.00" height="23.00" fill="#F4F6F8" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="704.00" y="178.00" width="25.00" height="23.00" fill="#F5F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="730.00" y="178.00" width="25.00" height="23.00" fill="#F5F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="756.00" y="178.00" width="25.00" height="23.00" fill="#EDF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="782.00" y="178.00" width="25.00" height="23.00" fill="#F1F4F6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+4</text>
+<rect x="808.00" y="178.00" width="25.00" height="23.00" fill="#EAEEF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="834.00" y="178.00" width="25.00" height="23.00" fill="#CDD6DF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="860.00" y="178.00" width="25.00" height="23.00" fill="#E7ECF0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="194.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<text x="96.00" y="218.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A6 zstd-3</text>
+<rect x="106.00" y="202.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="132.00" y="202.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="158.00" y="202.00" width="25.00" height="23.00" fill="#F6F7F9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+3</text>
+<rect x="184.00" y="202.00" width="25.00" height="23.00" fill="#F6F8FA" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+2</text>
+<rect x="210.00" y="202.00" width="25.00" height="23.00" fill="#E8ECF0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="236.00" y="202.00" width="25.00" height="23.00" fill="#E6EBEF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="262.00" y="202.00" width="25.00" height="23.00" fill="#EAEEF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="288.00" y="202.00" width="25.00" height="23.00" fill="#E9EDF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="314.00" y="202.00" width="25.00" height="23.00" fill="#E9EDF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="340.00" y="202.00" width="25.00" height="23.00" fill="#E8EDF0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="366.00" y="202.00" width="25.00" height="23.00" fill="#EAEEF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="392.00" y="202.00" width="25.00" height="23.00" fill="#E9EDF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="418.00" y="202.00" width="25.00" height="23.00" fill="#E9EDF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="444.00" y="202.00" width="25.00" height="23.00" fill="#D9E0E6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+11</text>
+<rect x="470.00" y="202.00" width="25.00" height="23.00" fill="#E7EBEF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="496.00" y="202.00" width="25.00" height="23.00" fill="#DDE4E9" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+10</text>
+<rect x="522.00" y="202.00" width="25.00" height="23.00" fill="#E8ECF0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="548.00" y="202.00" width="25.00" height="23.00" fill="#ECEFF3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="574.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="600.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="626.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="652.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="678.00" y="202.00" width="25.00" height="23.00" fill="#ECEFF3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="704.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="730.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="756.00" y="202.00" width="25.00" height="23.00" fill="#E6EBEF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="782.00" y="202.00" width="25.00" height="23.00" fill="#ECF0F3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+5</text>
+<rect x="808.00" y="202.00" width="25.00" height="23.00" fill="#E9EDF1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+6</text>
+<rect x="834.00" y="202.00" width="25.00" height="23.00" fill="#DEE5EA" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+9</text>
+<rect x="860.00" y="202.00" width="25.00" height="23.00" fill="#DFE5EA" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="218.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+9</text>
+<text x="96.00" y="242.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827">A7 no intensity-delta</text>
+<rect x="106.00" y="226.00" width="25.00" height="23.00" fill="#DAE1E7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="119.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="132.00" y="226.00" width="25.00" height="23.00" fill="#DAE1E7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="145.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="158.00" y="226.00" width="25.00" height="23.00" fill="#DAE1E7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="171.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+7</text>
+<rect x="184.00" y="226.00" width="25.00" height="23.00" fill="#D2DBE2" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="197.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+9</text>
+<rect x="210.00" y="226.00" width="25.00" height="23.00" fill="#B7C5D1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="223.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="236.00" y="226.00" width="25.00" height="23.00" fill="#B5C3CF" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="249.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="262.00" y="226.00" width="25.00" height="23.00" fill="#BCC9D4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="275.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="288.00" y="226.00" width="25.00" height="23.00" fill="#B8C6D1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="301.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="314.00" y="226.00" width="25.00" height="23.00" fill="#B9C7D2" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="327.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="340.00" y="226.00" width="25.00" height="23.00" fill="#BAC8D3" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="353.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="366.00" y="226.00" width="25.00" height="23.00" fill="#BCC9D4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="379.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="392.00" y="226.00" width="25.00" height="23.00" fill="#B9C6D2" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="405.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="418.00" y="226.00" width="25.00" height="23.00" fill="#B8C6D1" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="431.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="444.00" y="226.00" width="25.00" height="23.00" fill="#A5B6C5" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="457.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+18</text>
+<rect x="470.00" y="226.00" width="25.00" height="23.00" fill="#B2C1CD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="483.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+15</text>
+<rect x="496.00" y="226.00" width="25.00" height="23.00" fill="#B2C1CD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="509.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+15</text>
+<rect x="522.00" y="226.00" width="25.00" height="23.00" fill="#B2C1CD" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="535.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+15</text>
+<rect x="548.00" y="226.00" width="25.00" height="23.00" fill="#BFCBD6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="561.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+12</text>
+<rect x="574.00" y="226.00" width="25.00" height="23.00" fill="#BFCBD6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="587.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="600.00" y="226.00" width="25.00" height="23.00" fill="#BDCAD5" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="613.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="626.00" y="226.00" width="25.00" height="23.00" fill="#BFCCD6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="639.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+12</text>
+<rect x="652.00" y="226.00" width="25.00" height="23.00" fill="#BFCBD6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="665.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+12</text>
+<rect x="678.00" y="226.00" width="25.00" height="23.00" fill="#BECAD5" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="691.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="704.00" y="226.00" width="25.00" height="23.00" fill="#C0CCD7" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="717.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+12</text>
+<rect x="730.00" y="226.00" width="25.00" height="23.00" fill="#BFCCD6" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="743.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+12</text>
+<rect x="756.00" y="226.00" width="25.00" height="23.00" fill="#B2C1CE" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="769.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+15</text>
+<rect x="782.00" y="226.00" width="25.00" height="23.00" fill="#BDCAD4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="795.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+13</text>
+<rect x="808.00" y="226.00" width="25.00" height="23.00" fill="#B5C4D0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="821.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<rect x="834.00" y="226.00" width="25.00" height="23.00" fill="#A4B5C4" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="847.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+18</text>
+<rect x="860.00" y="226.00" width="25.00" height="23.00" fill="#B5C4D0" stroke="#FFFFFF" opacity="1.000" rx="0.00"/>
+<text x="873.00" y="242.00" font-size="7.40" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="middle" fill="#111827">+14</text>
+<text x="119.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 119.00 272.00)">F1</text>
+<text x="145.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 145.00 272.00)">F2</text>
+<text x="171.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 171.00 272.00)">F3</text>
+<text x="197.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 197.00 272.00)">F4</text>
+<text x="223.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 223.00 272.00)">F8</text>
+<text x="249.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 249.00 272.00)">F9</text>
+<text x="275.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 275.00 272.00)">F10</text>
+<text x="301.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 301.00 272.00)">F12</text>
+<text x="327.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 327.00 272.00)">F13</text>
+<text x="353.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 353.00 272.00)">F14</text>
+<text x="379.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 379.00 272.00)">F15</text>
+<text x="405.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 405.00 272.00)">F16</text>
+<text x="431.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 431.00 272.00)">F17</text>
+<text x="457.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 457.00 272.00)">F18</text>
+<text x="483.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 483.00 272.00)">F19</text>
+<text x="509.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 509.00 272.00)">F20</text>
+<text x="535.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 535.00 272.00)">F21</text>
+<text x="561.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 561.00 272.00)">F23</text>
+<text x="587.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 587.00 272.00)">F24</text>
+<text x="613.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 613.00 272.00)">F25</text>
+<text x="639.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 639.00 272.00)">F26</text>
+<text x="665.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 665.00 272.00)">F27</text>
+<text x="691.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 691.00 272.00)">F28</text>
+<text x="717.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 717.00 272.00)">F29</text>
+<text x="743.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 743.00 272.00)">F30</text>
+<text x="769.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 769.00 272.00)">F31</text>
+<text x="795.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 795.00 272.00)">F32</text>
+<text x="821.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 821.00 272.00)">F33</text>
+<text x="847.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 847.00 272.00)">F34</text>
+<text x="873.00" y="272.00" font-size="8.20" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#111827" transform="rotate(-45.00 873.00 272.00)">F35</text>
+<rect x="106.00" y="58.00" width="780.00" height="192.00" fill="none" stroke="#111827" opacity="1.000" rx="0.00"/>
+<rect x="106.00" y="342.00" width="16.00" height="12.00" fill="#F67280" stroke="#111827" opacity="1.000" rx="0.00"/>
+<text x="128.00" y="353.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#111827">smaller than A0</text>
+<rect x="248.00" y="342.00" width="16.00" height="12.00" fill="#F6F7F9" stroke="#D1D5DB" opacity="1.000" rx="0.00"/>
+<text x="270.00" y="353.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#111827">A0 / no change</text>
+<rect x="378.00" y="342.00" width="16.00" height="12.00" fill="#355C7D" stroke="#111827" opacity="1.000" rx="0.00"/>
+<text x="400.00" y="353.00" font-size="9.50" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="start" fill="#111827">larger than A0</text>
+<text x="912.00" y="384.00" font-size="10.00" font-family="Arial, DejaVu Sans, sans-serif" font-weight="400" text-anchor="end" fill="#4B5563">Cell values are % MS1 size change vs A0; positive is worse. A7 row is visually emphasized.</text>
+</svg>

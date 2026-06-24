@@ -1,0 +1,16 @@
+{
+  "n_files_total": 30,
+  "n_files_ms2_bearing": 30,
+  "b0_ms2_aggregate_cr": 3.383297170658161,
+  "b1_ms2_aggregate_cr": 2.725103972196003,
+  "b0_archive_aggregate_cr": 5.544144792022014,
+  "b1_archive_aggregate_cr": 4.9183648081816855,
+  "delta_archive_size_pct": 12.723334039787893,
+  "ms2_dict_contribution_pct": 24.152957288149214,
+  "sum_ms2_raw_bytes": 28292282656,
+  "sum_tc_ms2_compressed_bytes": 8362340412,
+  "sum_zdpd_ms2_compressed_bytes": 10382092920,
+  "sum_b0_archive_bytes": 15874396614,
+  "sum_b1_archive_bytes": 17894149122,
+  "sum_mzml_bytes": 88009953314
+}
