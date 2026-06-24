@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;dominant-baseline:auto}.title{font-weight:700}.tick{fill:#333333}.muted{fill:#666666}</style>
+<text x="640.00" y="34.00" font-size="21" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">Section-level compression advantage</text>
+<text x="340.00" y="98.00" font-size="15" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">MS1 mean compression ratio</text>
+<line x1="128.00" y1="398.00" x2="592.00" y2="398.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="118.00" y="402.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">0.0</text>
+<line x1="128.00" y1="329.00" x2="592.00" y2="329.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="118.00" y="333.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">2.0</text>
+<line x1="128.00" y1="260.00" x2="592.00" y2="260.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="118.00" y="264.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">4.0</text>
+<line x1="128.00" y1="191.00" x2="592.00" y2="191.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="118.00" y="195.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">6.0</text>
+<line x1="128.00" y1="122.00" x2="592.00" y2="122.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="118.00" y="126.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">8.0</text>
+<line x1="128.00" y1="398.00" x2="592.00" y2="398.00" stroke="#BFC5CC" stroke-width="1.00" opacity="1.000"/>
+<line x1="128.00" y1="122.00" x2="128.00" y2="398.00" stroke="#BFC5CC" stroke-width="1.00" opacity="1.000"/>
+<text x="86.00" y="260.00" font-size="11" fill="#666666" text-anchor="middle" font-weight="400" opacity="1.000" transform="rotate(-90.0 86.00 260.00)">Compression ratio (x)</text>
+<line x1="128.00" y1="180.85" x2="592.00" y2="180.85" stroke="#72B7B2" stroke-width="1.20" opacity="0.880" stroke-dasharray="5 4"/>
+<text x="588.00" y="173.85" font-size="9" fill="#72B7B2" text-anchor="end" font-weight="400" opacity="1.000">ZDPD mean</text>
+<rect x="147.49" y="180.85" width="53.82" height="217.15" fill="#00A087" opacity="1.000"/>
+<text x="174.40" y="417.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">AirdPro</text>
+<text x="174.40" y="429.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">Default</text>
+<text x="174.40" y="172.85" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">6.29x</text>
+<rect x="240.29" y="180.85" width="53.82" height="217.15" fill="#72B7B2" opacity="1.000"/>
+<text x="267.20" y="423.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">ZDPD</text>
+<text x="267.20" y="172.85" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">6.29x</text>
+<rect x="333.09" y="176.96" width="53.82" height="221.04" fill="#F58518" opacity="1.000"/>
+<text x="360.00" y="417.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">TrackCodec</text>
+<text x="360.00" y="429.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">eq-fidelity</text>
+<text x="360.00" y="168.96" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">6.41x</text>
+<text x="360.00" y="152.96" font-size="9" fill="#F58518" text-anchor="middle" font-weight="400" opacity="1.000">+1.8%</text>
+<rect x="425.89" y="200.14" width="53.82" height="197.86" fill="#3C5488" opacity="1.000"/>
+<text x="452.80" y="417.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">TrackCodec</text>
+<text x="452.80" y="429.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">strict q6</text>
+<text x="452.80" y="192.14" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">5.74x</text>
+<text x="452.80" y="176.14" font-size="9" fill="#3C5488" text-anchor="middle" font-weight="400" opacity="1.000">-8.9%</text>
+<rect x="518.69" y="164.25" width="53.82" height="233.75" fill="#E45756" opacity="1.000"/>
+<text x="545.60" y="417.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">TrackCodec</text>
+<text x="545.60" y="429.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">archive fidelity</text>
+<text x="545.60" y="156.25" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">6.78x</text>
+<text x="545.60" y="140.25" font-size="9" fill="#E45756" text-anchor="middle" font-weight="400" opacity="1.000">+7.6%</text>
+<text x="950.00" y="98.00" font-size="15" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">MS2 mean compression ratio</text>
+<line x1="748.00" y1="398.00" x2="1192.00" y2="398.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="738.00" y="402.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">0.0</text>
+<line x1="748.00" y1="342.80" x2="1192.00" y2="342.80" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="738.00" y="346.80" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">1.0</text>
+<line x1="748.00" y1="287.60" x2="1192.00" y2="287.60" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="738.00" y="291.60" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">2.0</text>
+<line x1="748.00" y1="232.40" x2="1192.00" y2="232.40" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="738.00" y="236.40" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">3.0</text>
+<line x1="748.00" y1="177.20" x2="1192.00" y2="177.20" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="738.00" y="181.20" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">4.0</text>
+<line x1="748.00" y1="122.00" x2="1192.00" y2="122.00" stroke="#D8DEE4" stroke-width="0.80" opacity="0.800"/>
+<text x="738.00" y="126.00" font-size="10" fill="#666666" text-anchor="end" font-weight="400" opacity="1.000">5.0</text>
+<line x1="748.00" y1="398.00" x2="1192.00" y2="398.00" stroke="#BFC5CC" stroke-width="1.00" opacity="1.000"/>
+<line x1="748.00" y1="122.00" x2="748.00" y2="398.00" stroke="#BFC5CC" stroke-width="1.00" opacity="1.000"/>
+<text x="706.00" y="260.00" font-size="11" fill="#666666" text-anchor="middle" font-weight="400" opacity="1.000" transform="rotate(-90.0 706.00 260.00)">Compression ratio (x)</text>
+<line x1="748.00" y1="209.56" x2="1192.00" y2="209.56" stroke="#72B7B2" stroke-width="1.20" opacity="0.880" stroke-dasharray="5 4"/>
+<text x="1188.00" y="202.56" font-size="9" fill="#72B7B2" text-anchor="end" font-weight="400" opacity="1.000">ZDPD mean</text>
+<rect x="779.08" y="209.56" width="85.84" height="188.44" fill="#72B7B2" opacity="1.000"/>
+<text x="822.00" y="423.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">ZDPD</text>
+<text x="822.00" y="201.56" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">3.41x</text>
+<rect x="927.08" y="209.56" width="85.84" height="188.44" fill="#00A087" opacity="1.000"/>
+<text x="970.00" y="417.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">AirdPro</text>
+<text x="970.00" y="429.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">Default</text>
+<text x="970.00" y="201.56" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">3.41x</text>
+<rect x="1075.08" y="167.85" width="85.84" height="230.15" fill="#F58518" opacity="1.000"/>
+<text x="1118.00" y="417.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">TrackCodec</text>
+<text x="1118.00" y="429.00" font-size="9" fill="#222222" text-anchor="middle" font-weight="400" opacity="1.000">eq-fidelity</text>
+<text x="1118.00" y="159.85" font-size="10" fill="#222222" text-anchor="middle" font-weight="700" opacity="1.000">4.17x</text>
+<text x="1118.00" y="143.85" font-size="9" fill="#F58518" text-anchor="middle" font-weight="400" opacity="1.000">+22.1%</text>
+</svg>

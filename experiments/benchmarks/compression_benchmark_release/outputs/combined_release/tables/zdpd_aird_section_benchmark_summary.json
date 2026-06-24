@@ -1,0 +1,31 @@
+﻿{
+  "output_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\zdpd_aird_section_benchmark.csv",
+  "trackcodec_section_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_ms1_ms2_section_benchmark.csv",
+  "summary_csvs": [
+    "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\whole_file_summaries\\full8_summary.csv",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\whole_file_summaries\\data_stackzdpd_summary.csv",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\whole_file_summaries\\data_stackzdpd_aif_summary.csv"
+  ],
+  "method": "zdpd",
+  "label": "zdpd_baseline",
+  "exclude_files": [],
+  "scope": "AirdPro .aird numeric payload bytes from json indexList; raw bytes from TrackCodec section stats",
+  "n_rows": 72,
+  "n_files": 36,
+  "included_counts": {
+    "MS1": 36,
+    "MS2": 35
+  },
+  "missing": [
+    {
+      "file": "01625b_GA1-TUM_first_pool_1_01_01-DDA-1h-R2.uncompressed.mzML",
+      "section": "MS1",
+      "reason": "missing TrackCodec raw row"
+    },
+    {
+      "file": "01625b_GA1-TUM_first_pool_1_01_01-DDA-1h-R2.uncompressed.mzML",
+      "section": "MS2",
+      "reason": "missing TrackCodec raw row"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Combined Compression Benchmark Figures</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #1f2933; }
+    main { max-width: 1320px; margin: 0 auto; padding: 26px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .meta { color: #52606d; margin-bottom: 20px; }
+    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 18px 0 24px; }
+    .tile { background: #fff; border: 1px solid #d9e2ec; border-radius: 6px; padding: 12px; }
+    .tile b { display: block; font-size: 22px; }
+    .figure { background: #fff; border: 1px solid #d9e2ec; border-radius: 6px; padding: 14px; margin: 16px 0; overflow-x: auto; }
+    .figure h2 { margin: 0 0 12px; font-size: 18px; }
+    .note { background: #fff; border: 1px solid #d9e2ec; border-radius: 6px; padding: 14px; margin: 20px 0 12px; }
+    .note h2 { margin: 0 0 8px; font-size: 18px; }
+    .note p { margin: 0; color: #52606d; line-height: 1.45; }
+    .links { margin: -6px 0 10px; color: #52606d; font-size: 13px; }
+    .links a { color: #1f5fbf; text-decoration: none; }
+    img { width: 100%; min-width: 960px; height: auto; display: block; }
+    code { background: #eef2f7; padding: 1px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Combined Compression Benchmark Figures</h1>
+  <p class="meta">Generated from full8 and Data_StackZDPD benchmark summaries. Only files with all expected method rows are counted as completed files. Vendor raw dashed lines use matching local instrument raw files or paper inventory sizes, and are shown only when the vendor raw reference is not larger than the mzML input. zlib/gzip use ProteoWizard default compression level.</p>
+  <div class="summary">
+    <div class="tile"><span>Completed files</span><b>36</b></div>
+    <div class="tile"><span>Rows plotted</span><b>360</b></div>
+    <div class="tile"><span>OK rows</span><b>331</b></div>
+    <div class="tile"><span>Error rows</span><b>29</b></div>
+    <div class="tile"><span>Vendor raw refs</span><b>19</b></div>
+    <div class="tile"><span>Figure panels</span><b>7</b></div>
+  </div>
+  
+      <section class="figure">
+        <h2>Combined Compression Ratio Distribution</h2>
+        <a href="plots/combined_compression_ratio_distribution.svg"><img src="plots/combined_compression_ratio_distribution.svg" alt="Combined Compression Ratio Distribution"></a>
+      </section>
+
+      <section class="figure">
+        <h2>Combined Mean Compression Ratio</h2>
+        <a href="plots/combined_mean_compression_ratio.svg"><img src="plots/combined_mean_compression_ratio.svg" alt="Combined Mean Compression Ratio"></a>
+      </section>
+
+      <section class="figure">
+        <h2>Combined Total Compressed Size</h2>
+        <a href="plots/combined_total_compressed_size.svg"><img src="plots/combined_total_compressed_size.svg" alt="Combined Total Compressed Size"></a>
+      </section>
+
+      <section class="figure">
+        <h2>Combined Ratio Vs Elapsed Time</h2>
+        <a href="plots/combined_ratio_vs_elapsed_time.svg"><img src="plots/combined_ratio_vs_elapsed_time.svg" alt="Combined Ratio Vs Elapsed Time"></a>
+      </section>
+
+      <section class="figure">
+        <h2>Combined Method File Ratio Heatmap</h2>
+        <a href="plots/combined_method_file_ratio_heatmap.svg"><img src="plots/combined_method_file_ratio_heatmap.svg" alt="Combined Method File Ratio Heatmap"></a>
+      </section>
+
+      <section class="figure">
+        <h2>Combined Method File Status Matrix</h2>
+        <a href="plots/combined_method_file_status_matrix.svg"><img src="plots/combined_method_file_status_matrix.svg" alt="Combined Method File Status Matrix"></a>
+      </section>
+
+      <section class="figure">
+        <h2>Combined Multipanel Compressed Size</h2>
+        <a href="plots/combined_multipanel_compressed_size.svg"><img src="plots/combined_multipanel_compressed_size.svg" alt="Combined Multipanel Compressed Size"></a>
+      </section>
+
+</main>
+</body>
+</html>

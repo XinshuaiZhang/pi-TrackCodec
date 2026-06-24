@@ -1,0 +1,782 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2293 510" role="img">
+
+<style>
+  .title{font:700 23px Arial,sans-serif;fill:#1f2933}
+  .subtitle{font:12px Arial,sans-serif;fill:#52606d}
+  .axis{font:12px Arial,sans-serif;fill:#374151}
+  .small{font:10px Arial,sans-serif;fill:#374151}
+  .tiny{font:8.5px Arial,sans-serif;fill:#374151}
+  .grid{stroke:#d9e2ec;stroke-width:1;stroke-dasharray:2 5}
+  .axisline{stroke:#7b8794;stroke-width:1.2}
+</style>
+
+<rect x="0" y="0" width="2293" height="510" fill="#ffffff"/>
+<text class="title" x="90" y="38">Method x File Status Matrix</text>
+<text class="subtitle" x="90" y="62">Green indicates an OK result; red indicates an error row recorded in the benchmark summary.</text>
+<text class="axis" x="155" y="101" text-anchor="end">Original mzML</text>
+<rect x="165" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="82" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="101" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="131" text-anchor="end">zlib mzML</text>
+<rect x="165" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="112" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="131" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="161" text-anchor="end">gzip mzML</text>
+<rect x="165" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="142" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="161" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="191" text-anchor="end">Numpress+zlib</text>
+<rect x="165" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="172" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="191" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="221" text-anchor="end">MassComp</text>
+<rect x="165" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="202" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="221" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="251" text-anchor="end">mspack</text>
+<rect x="165" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="232" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="251" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="281" text-anchor="end">ZDPD</text>
+<rect x="165" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="262" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="281" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="311" text-anchor="end">Stack-ZDPD</text>
+<rect x="165" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="281" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="339" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="571" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="629" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="687" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="745" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="803" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="861" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="919" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1035" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1093" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1151" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1209" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1267" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1325" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1383" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1441" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1499" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1557" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1615" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1673" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1731" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1789" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1847" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1905" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="1963" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="2021" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="2137" y="292" width="58" height="30" fill="#E15759" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="311" text-anchor="middle" fill="#ffffff">ERR</text>
+<rect x="2195" y="292" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="311" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="341" text-anchor="end">AirdPro</text>
+<rect x="165" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="322" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="341" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="axis" x="155" y="371" text-anchor="end">TrackCodec</text>
+<rect x="165" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="223" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="281" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="339" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="397" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="455" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="513" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="571" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="629" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="687" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="745" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="803" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="861" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="919" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="977" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1035" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1093" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1151" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1209" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1267" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1325" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1383" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1441" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1499" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1557" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1615" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1673" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1731" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1789" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1847" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1905" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="1963" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2021" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2079" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2137" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<rect x="2195" y="352" width="58" height="30" fill="#59A14F" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="371" text-anchor="middle" fill="#ffffff">OK</text>
+<text class="tiny" x="194.00" y="400.00" text-anchor="end" transform="rotate(-55 194.00 400.00)">SZ-File13</text>
+<text class="tiny" x="252.00" y="400.00" text-anchor="end" transform="rotate(-55 252.00 400.00)">SZ-File14</text>
+<text class="tiny" x="310.00" y="400.00" text-anchor="end" transform="rotate(-55 310.00 400.00)">SZ-File15</text>
+<text class="tiny" x="368.00" y="400.00" text-anchor="end" transform="rotate(-55 368.00 400.00)">SZ-File16</text>
+<text class="tiny" x="426.00" y="400.00" text-anchor="end" transform="rotate(-55 426.00 400.00)">SZ-File18</text>
+<text class="tiny" x="484.00" y="400.00" text-anchor="end" transform="rotate(-55 484.00 400.00)">SZ-File2</text>
+<text class="tiny" x="542.00" y="400.00" text-anchor="end" transform="rotate(-55 542.00 400.00)">SZ-File3</text>
+<text class="tiny" x="600.00" y="400.00" text-anchor="end" transform="rotate(-55 600.00 400.00)">SZ-File4</text>
+<text class="tiny" x="658.00" y="400.00" text-anchor="end" transform="rotate(-55 658.00 400.00)">SZ-File5</text>
+<text class="tiny" x="716.00" y="400.00" text-anchor="end" transform="rotate(-55 716.00 400.00)">SZ-File6</text>
+<text class="tiny" x="774.00" y="400.00" text-anchor="end" transform="rotate(-55 774.00 400.00)">SZ-LFQ_Orbitrap_AIF_H</text>
+<text class="tiny" x="832.00" y="400.00" text-anchor="end" transform="rotate(-55 832.00 400.00)">SZ-LFQ_Orbitrap_AIF_H</text>
+<text class="tiny" x="890.00" y="400.00" text-anchor="end" transform="rotate(-55 890.00 400.00)">SZ-Set_1_F2</text>
+<text class="tiny" x="948.00" y="400.00" text-anchor="end" transform="rotate(-55 948.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1006.00" y="400.00" text-anchor="end" transform="rotate(-55 1006.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1064.00" y="400.00" text-anchor="end" transform="rotate(-55 1064.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1122.00" y="400.00" text-anchor="end" transform="rotate(-55 1122.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1180.00" y="400.00" text-anchor="end" transform="rotate(-55 1180.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1238.00" y="400.00" text-anchor="end" transform="rotate(-55 1238.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1296.00" y="400.00" text-anchor="end" transform="rotate(-55 1296.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1354.00" y="400.00" text-anchor="end" transform="rotate(-55 1354.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1412.00" y="400.00" text-anchor="end" transform="rotate(-55 1412.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1470.00" y="400.00" text-anchor="end" transform="rotate(-55 1470.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1528.00" y="400.00" text-anchor="end" transform="rotate(-55 1528.00 400.00)">F8-DDA-true</text>
+<text class="tiny" x="1586.00" y="400.00" text-anchor="end" transform="rotate(-55 1586.00 400.00)">F8-E4802</text>
+<text class="tiny" x="1644.00" y="400.00" text-anchor="end" transform="rotate(-55 1644.00 400.00)">F8-E4802</text>
+<text class="tiny" x="1702.00" y="400.00" text-anchor="end" transform="rotate(-55 1702.00 400.00)">F8-E4802</text>
+<text class="tiny" x="1760.00" y="400.00" text-anchor="end" transform="rotate(-55 1760.00 400.00)">F8-E4802</text>
+<text class="tiny" x="1818.00" y="400.00" text-anchor="end" transform="rotate(-55 1818.00 400.00)">F8-E4804-R1</text>
+<text class="tiny" x="1876.00" y="400.00" text-anchor="end" transform="rotate(-55 1876.00 400.00)">F8-E4804-R1</text>
+<text class="tiny" x="1934.00" y="400.00" text-anchor="end" transform="rotate(-55 1934.00 400.00)">F8-E4804-R2</text>
+<text class="tiny" x="1992.00" y="400.00" text-anchor="end" transform="rotate(-55 1992.00 400.00)">F8-E4804-cent</text>
+<text class="tiny" x="2050.00" y="400.00" text-anchor="end" transform="rotate(-55 2050.00 400.00)">F8-E4805-DIA</text>
+<text class="tiny" x="2108.00" y="400.00" text-anchor="end" transform="rotate(-55 2108.00 400.00)">F8-E4805-R2</text>
+<text class="tiny" x="2166.00" y="400.00" text-anchor="end" transform="rotate(-55 2166.00 400.00)">F8-E4805-R2</text>
+<text class="tiny" x="2224.00" y="400.00" text-anchor="end" transform="rotate(-55 2224.00 400.00)">F8-ETD</text>
+</svg>

@@ -1,0 +1,63 @@
+﻿{
+  "output_dir": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release",
+  "inputs": [
+    {
+      "dataset_key": "full8",
+      "summary_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\whole_file_summaries\\full8_summary.csv"
+    },
+    {
+      "dataset_key": "data_stackzdpd",
+      "summary_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\whole_file_summaries\\data_stackzdpd_summary.csv"
+    },
+    {
+      "dataset_key": "data_stackzdpd",
+      "summary_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\whole_file_summaries\\data_stackzdpd_aif_summary.csv"
+    }
+  ],
+  "vendor_raw_dirs": [
+    "<WORKSPACE>\\benchmark\\data_full8_raw"
+  ],
+  "vendor_size_tables": [
+    "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\refs\\dataset_header_inventory_report.md",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\inputs\\refs\\compression_ratio_tables_with_ms_format.md"
+  ],
+  "exclude_files": [
+    "01625b_GA1-TUM_first_pool_1_01_01-DDA-1h-R2.uncompressed.mzML"
+  ],
+  "n_vendor_size_table_refs_indexed": 30,
+  "n_vendor_raw_files_indexed": 45,
+  "n_completed_files_with_vendor_raw": 19,
+  "n_files": 36,
+  "n_rows": 360,
+  "n_ok_rows": 331,
+  "n_error_rows": 29,
+  "methods": [
+    "original_mzml",
+    "msconvert_zlib",
+    "msconvert_gzip",
+    "msconvert_numpress",
+    "masscomp",
+    "mspack",
+    "zdpd",
+    "stackzdpd",
+    "airdpro",
+    "trackcodec"
+  ],
+  "only_plot": "",
+  "tables": {
+    "per_file_methods": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\combined_per_file_methods.csv",
+    "aggregate_by_method": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\combined_aggregate_by_method.csv",
+    "file_completion_counts": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\input_file_completion_counts.csv"
+  },
+  "plots": {
+    "combined_compression_ratio_distribution": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution.svg",
+    "combined_mean_compression_ratio": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_mean_compression_ratio.svg",
+    "combined_total_compressed_size": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_total_compressed_size.svg",
+    "combined_ratio_vs_elapsed_time": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_ratio_vs_elapsed_time.svg",
+    "combined_method_file_ratio_heatmap": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_method_file_ratio_heatmap.svg",
+    "combined_method_file_status_matrix": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_method_file_status_matrix.svg",
+    "combined_multipanel_compressed_size": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_multipanel_compressed_size.svg"
+  },
+  "section_advantage_plots": {},
+  "html": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\combined_benchmark_figures.html"
+}

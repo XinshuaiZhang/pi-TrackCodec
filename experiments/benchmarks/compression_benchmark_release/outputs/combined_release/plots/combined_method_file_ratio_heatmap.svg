@@ -1,0 +1,782 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2293 520" role="img">
+
+<style>
+  .title{font:700 23px Arial,sans-serif;fill:#1f2933}
+  .subtitle{font:12px Arial,sans-serif;fill:#52606d}
+  .axis{font:12px Arial,sans-serif;fill:#374151}
+  .small{font:10px Arial,sans-serif;fill:#374151}
+  .tiny{font:8.5px Arial,sans-serif;fill:#374151}
+  .grid{stroke:#d9e2ec;stroke-width:1;stroke-dasharray:2 5}
+  .axisline{stroke:#7b8794;stroke-width:1.2}
+</style>
+
+<rect x="0" y="0" width="2293" height="520" fill="#ffffff"/>
+<text class="title" x="90" y="38">Method x File Compression Ratio Heatmap</text>
+<text class="subtitle" x="90" y="62">Failed runs are shown as N/A; values are compression ratio (input mzML bytes / compressed bytes).</text>
+<text class="axis" x="155" y="102" text-anchor="end">Original mzML</text>
+<rect x="165" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="223" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="281" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="339" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="397" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="455" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="513" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="571" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="629" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="687" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="745" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="803" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="861" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="919" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="977" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1035" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1093" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1151" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1209" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1267" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1325" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1383" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1441" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1499" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1557" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1615" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1673" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1731" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1789" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1847" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1905" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1963" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="2021" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="2079" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="2137" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="2195" y="82" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="102" text-anchor="middle" fill="#111111">1.0x</text>
+<text class="axis" x="155" y="133" text-anchor="end">zlib mzML</text>
+<rect x="165" y="113" width="58" height="31" fill="#E1F3F5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="223" y="113" width="58" height="31" fill="#E7F5F9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="133" text-anchor="middle" fill="#111111">1.2x</text>
+<rect x="281" y="113" width="58" height="31" fill="#E2F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="339" y="113" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="133" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="397" y="113" width="58" height="31" fill="#DCF1F3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="133" text-anchor="middle" fill="#111111">1.7x</text>
+<rect x="455" y="113" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="133" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="513" y="113" width="58" height="31" fill="#E2F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="571" y="113" width="58" height="31" fill="#E3F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="629" y="113" width="58" height="31" fill="#E2F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="687" y="113" width="58" height="31" fill="#E4F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="745" y="113" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="133" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="803" y="113" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="133" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="861" y="113" width="58" height="31" fill="#EAF6FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="133" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="919" y="113" width="58" height="31" fill="#E3F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="977" y="113" width="58" height="31" fill="#E2F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1035" y="113" width="58" height="31" fill="#E4F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="1093" y="113" width="58" height="31" fill="#E0F3F5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1151" y="113" width="58" height="31" fill="#E4F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="1209" y="113" width="58" height="31" fill="#E0F3F5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1267" y="113" width="58" height="31" fill="#E1F3F5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1325" y="113" width="58" height="31" fill="#E4F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="1383" y="113" width="58" height="31" fill="#E1F3F5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1441" y="113" width="58" height="31" fill="#E4F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="1499" y="113" width="58" height="31" fill="#E4F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="133" text-anchor="middle" fill="#111111">1.3x</text>
+<rect x="1557" y="113" width="58" height="31" fill="#EBF6FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="133" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="1615" y="113" width="58" height="31" fill="#E3F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="1673" y="113" width="58" height="31" fill="#E1F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1731" y="113" width="58" height="31" fill="#E1F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1789" y="113" width="58" height="31" fill="#EBF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="133" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1847" y="113" width="58" height="31" fill="#E1F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="133" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1905" y="113" width="58" height="31" fill="#EBF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="133" text-anchor="middle" fill="#111111">1.0x</text>
+<rect x="1963" y="113" width="58" height="31" fill="#EAF6FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="133" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="2021" y="113" width="58" height="31" fill="#EBF7FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="133" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="2079" y="113" width="58" height="31" fill="#EBF7FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="133" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="2137" y="113" width="58" height="31" fill="#E3F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="133" text-anchor="middle" fill="#111111">1.4x</text>
+<rect x="2195" y="113" width="58" height="31" fill="#ECF7FB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="133" text-anchor="middle" fill="#111111">1.0x</text>
+<text class="axis" x="155" y="164" text-anchor="end">gzip mzML</text>
+<rect x="165" y="144" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="164" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="223" y="144" width="58" height="31" fill="#B5E2E0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="164" text-anchor="middle" fill="#111111">3.5x</text>
+<rect x="281" y="144" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="164" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="339" y="144" width="58" height="31" fill="#D3EEEF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="397" y="144" width="58" height="31" fill="#D6EFF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="164" text-anchor="middle" fill="#111111">2.0x</text>
+<rect x="455" y="144" width="58" height="31" fill="#D3EDEF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="513" y="144" width="58" height="31" fill="#D4EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="571" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="164" text-anchor="middle" fill="#111111">2.0x</text>
+<rect x="629" y="144" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="164" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="687" y="144" width="58" height="31" fill="#D2EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="745" y="144" width="58" height="31" fill="#C3E8E7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="164" text-anchor="middle" fill="#111111">2.9x</text>
+<rect x="803" y="144" width="58" height="31" fill="#C0E6E6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="164" text-anchor="middle" fill="#111111">3.0x</text>
+<rect x="861" y="144" width="58" height="31" fill="#DCF1F3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="164" text-anchor="middle" fill="#111111">1.7x</text>
+<rect x="919" y="144" width="58" height="31" fill="#D3EEEF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="977" y="144" width="58" height="31" fill="#D9F0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="164" text-anchor="middle" fill="#111111">1.9x</text>
+<rect x="1035" y="144" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1093" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1151" y="144" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="164" text-anchor="middle" fill="#111111">2.3x</text>
+<rect x="1209" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1267" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1325" y="144" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1383" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1441" y="144" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1499" y="144" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1557" y="144" width="58" height="31" fill="#E2F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="164" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="1615" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1673" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1731" y="144" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1789" y="144" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="164" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="1847" y="144" width="58" height="31" fill="#D4EEEF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="164" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="1905" y="144" width="58" height="31" fill="#DBF1F3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="164" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="1963" y="144" width="58" height="31" fill="#B5E2E0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="164" text-anchor="middle" fill="#111111">3.5x</text>
+<rect x="2021" y="144" width="58" height="31" fill="#E2F3F6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="164" text-anchor="middle" fill="#111111">1.5x</text>
+<rect x="2079" y="144" width="58" height="31" fill="#DDF1F4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="164" text-anchor="middle" fill="#111111">1.7x</text>
+<rect x="2137" y="144" width="58" height="31" fill="#D2EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="164" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="2195" y="144" width="58" height="31" fill="#E6F5F8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="164" text-anchor="middle" fill="#111111">1.3x</text>
+<text class="axis" x="155" y="195" text-anchor="end">Numpress+zlib</text>
+<rect x="165" y="175" width="58" height="31" fill="#84D0C9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="195" text-anchor="middle" fill="#111111">5.8x</text>
+<rect x="223" y="175" width="58" height="31" fill="#E5F4F7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="195" text-anchor="middle" fill="#111111">1.3x</text>
+<rect x="281" y="175" width="58" height="31" fill="#A3DBD8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="195" text-anchor="middle" fill="#111111">4.3x</text>
+<rect x="339" y="175" width="58" height="31" fill="#77C9C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="195" text-anchor="middle" fill="#ffffff">6.4x</text>
+<rect x="397" y="175" width="58" height="31" fill="#8AD2CB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="195" text-anchor="middle" fill="#111111">5.5x</text>
+<rect x="455" y="175" width="58" height="31" fill="#76C8C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="195" text-anchor="middle" fill="#ffffff">6.4x</text>
+<rect x="513" y="175" width="58" height="31" fill="#CAEAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="195" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="571" y="175" width="58" height="31" fill="#BEE6E5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="195" text-anchor="middle" fill="#111111">3.1x</text>
+<rect x="629" y="175" width="58" height="31" fill="#9FDAD5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="195" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="687" y="175" width="58" height="31" fill="#C5E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="195" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="745" y="175" width="58" height="31" fill="#EAF6FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="195" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="803" y="175" width="58" height="31" fill="#EAF6FA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="195" text-anchor="middle" fill="#111111">1.1x</text>
+<rect x="861" y="175" width="58" height="31" fill="#DEF2F4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="195" text-anchor="middle" fill="#111111">1.6x</text>
+<rect x="919" y="175" width="58" height="31" fill="#C6E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="195" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="977" y="175" width="58" height="31" fill="#9FDAD6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="195" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="1035" y="175" width="58" height="31" fill="#CEECEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1093" y="175" width="58" height="31" fill="#CEEBEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1151" y="175" width="58" height="31" fill="#CEECEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1209" y="175" width="58" height="31" fill="#CEECED" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1267" y="175" width="58" height="31" fill="#CEECEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1325" y="175" width="58" height="31" fill="#CEECED" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1383" y="175" width="58" height="31" fill="#CEECEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1441" y="175" width="58" height="31" fill="#CFECED" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="195" text-anchor="middle" fill="#111111">2.3x</text>
+<rect x="1499" y="175" width="58" height="31" fill="#CBEAEB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="195" text-anchor="middle" fill="#111111">2.5x</text>
+<rect x="1557" y="175" width="58" height="31" fill="#DCF1F3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="195" text-anchor="middle" fill="#111111">1.7x</text>
+<rect x="1615" y="175" width="58" height="31" fill="#C4E8E7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="195" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="1673" y="175" width="58" height="31" fill="#CCEBEB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="195" text-anchor="middle" fill="#111111">2.5x</text>
+<rect x="1731" y="175" width="58" height="31" fill="#CCEBEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="195" text-anchor="middle" fill="#111111">2.5x</text>
+<rect x="1789" y="175" width="58" height="31" fill="#DBF1F3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="195" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="1847" y="175" width="58" height="31" fill="#CEECED" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="1905" y="175" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="195" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="1963" y="175" width="58" height="31" fill="#E8F5F9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="195" text-anchor="middle" fill="#111111">1.2x</text>
+<rect x="2021" y="175" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="195" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="2079" y="175" width="58" height="31" fill="#DBF1F3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="195" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="2137" y="175" width="58" height="31" fill="#CDEBEC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="195" text-anchor="middle" fill="#111111">2.4x</text>
+<rect x="2195" y="175" width="58" height="31" fill="#BEE6E5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="195" text-anchor="middle" fill="#111111">3.1x</text>
+<text class="axis" x="155" y="226" text-anchor="end">MassComp</text>
+<rect x="165" y="206" width="58" height="31" fill="#D2EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="226" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="223" y="206" width="58" height="31" fill="#9FDAD5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="226" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="281" y="206" width="58" height="31" fill="#D2EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="226" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="339" y="206" width="58" height="31" fill="#C5E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="226" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="397" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="455" y="206" width="58" height="31" fill="#C4E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="226" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="513" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="571" y="206" width="58" height="31" fill="#CCEBEB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="226" text-anchor="middle" fill="#111111">2.5x</text>
+<rect x="629" y="206" width="58" height="31" fill="#D2EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="226" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="687" y="206" width="58" height="31" fill="#C8E9E9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="226" text-anchor="middle" fill="#111111">2.7x</text>
+<rect x="745" y="206" width="58" height="31" fill="#B2E1DF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="226" text-anchor="middle" fill="#111111">3.7x</text>
+<rect x="803" y="206" width="58" height="31" fill="#AEDFDD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="226" text-anchor="middle" fill="#111111">3.8x</text>
+<rect x="861" y="206" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="226" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="919" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="977" y="206" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="226" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1035" y="206" width="58" height="31" fill="#C6E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="226" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="1093" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1151" y="206" width="58" height="31" fill="#C6E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="226" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="1209" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1267" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1325" y="206" width="58" height="31" fill="#C6E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="226" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="1383" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1441" y="206" width="58" height="31" fill="#C6E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="226" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="1499" y="206" width="58" height="31" fill="#C6E9E9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="226" text-anchor="middle" fill="#111111">2.7x</text>
+<rect x="1557" y="206" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="226" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="1615" y="206" width="58" height="31" fill="#CBEAEB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="226" text-anchor="middle" fill="#111111">2.5x</text>
+<rect x="1673" y="206" width="58" height="31" fill="#CAEAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1731" y="206" width="58" height="31" fill="#C9EAEA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1789" y="206" width="58" height="31" fill="#D1EDEE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="226" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1847" y="206" width="58" height="31" fill="#C8E9EA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="226" text-anchor="middle" fill="#111111">2.6x</text>
+<rect x="1905" y="206" width="58" height="31" fill="#D2EDEF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="226" text-anchor="middle" fill="#111111">2.2x</text>
+<rect x="1963" y="206" width="58" height="31" fill="#A1DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="226" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="2021" y="206" width="58" height="31" fill="#DAF0F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="226" text-anchor="middle" fill="#111111">1.8x</text>
+<rect x="2079" y="206" width="58" height="31" fill="#D5EEF0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="226" text-anchor="middle" fill="#111111">2.1x</text>
+<rect x="2137" y="206" width="58" height="31" fill="#C8E9E9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="226" text-anchor="middle" fill="#111111">2.7x</text>
+<rect x="2195" y="206" width="58" height="31" fill="#DFF2F5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="226" text-anchor="middle" fill="#111111">1.6x</text>
+<text class="axis" x="155" y="257" text-anchor="end">mspack</text>
+<rect x="165" y="237" width="58" height="31" fill="#A6DCD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="257" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="223" y="237" width="58" height="31" fill="#86D0C9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="257" text-anchor="middle" fill="#111111">5.7x</text>
+<rect x="281" y="237" width="58" height="31" fill="#B5E2E0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="257" text-anchor="middle" fill="#111111">3.5x</text>
+<rect x="339" y="237" width="58" height="31" fill="#A2DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="257" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="397" y="237" width="58" height="31" fill="#A7DDD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="257" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="455" y="237" width="58" height="31" fill="#9FDAD6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="257" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="513" y="237" width="58" height="31" fill="#AEE0DD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="257" text-anchor="middle" fill="#111111">3.8x</text>
+<rect x="571" y="237" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="257" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="629" y="237" width="58" height="31" fill="#B4E2E0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="257" text-anchor="middle" fill="#111111">3.6x</text>
+<rect x="687" y="237" width="58" height="31" fill="#9DD9D5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="257" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="745" y="237" width="58" height="31" fill="#9DD9D5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="257" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="803" y="237" width="58" height="31" fill="#99D7D3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="257" text-anchor="middle" fill="#111111">4.8x</text>
+<rect x="861" y="237" width="58" height="31" fill="#CFECED" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="257" text-anchor="middle" fill="#111111">2.3x</text>
+<rect x="919" y="237" width="58" height="31" fill="#9DD9D4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="257" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="977" y="237" width="58" height="31" fill="#A2DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="257" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="1035" y="237" width="58" height="31" fill="#A3DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="257" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="1093" y="237" width="58" height="31" fill="#B1E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="257" text-anchor="middle" fill="#111111">3.7x</text>
+<rect x="1151" y="237" width="58" height="31" fill="#A2DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="257" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="1209" y="237" width="58" height="31" fill="#B1E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="257" text-anchor="middle" fill="#111111">3.7x</text>
+<rect x="1267" y="237" width="58" height="31" fill="#B1E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="257" text-anchor="middle" fill="#111111">3.7x</text>
+<rect x="1325" y="237" width="58" height="31" fill="#A3DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="257" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="1383" y="237" width="58" height="31" fill="#B0E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="257" text-anchor="middle" fill="#111111">3.7x</text>
+<rect x="1441" y="237" width="58" height="31" fill="#A3DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="257" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="1499" y="237" width="58" height="31" fill="#9FDAD6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="257" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="1557" y="237" width="58" height="31" fill="#C8E9E9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="257" text-anchor="middle" fill="#111111">2.7x</text>
+<rect x="1615" y="237" width="58" height="31" fill="#A6DCD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="257" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="1673" y="237" width="58" height="31" fill="#B0E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="257" text-anchor="middle" fill="#111111">3.8x</text>
+<rect x="1731" y="237" width="58" height="31" fill="#B0E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="257" text-anchor="middle" fill="#111111">3.8x</text>
+<rect x="1789" y="237" width="58" height="31" fill="#B6E2E1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="257" text-anchor="middle" fill="#111111">3.5x</text>
+<rect x="1847" y="237" width="58" height="31" fill="#B0E0DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="257" text-anchor="middle" fill="#111111">3.8x</text>
+<rect x="1905" y="237" width="58" height="31" fill="#B6E3E1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="257" text-anchor="middle" fill="#111111">3.5x</text>
+<rect x="1963" y="237" width="58" height="31" fill="#8CD2CC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="257" text-anchor="middle" fill="#111111">5.4x</text>
+<rect x="2021" y="237" width="58" height="31" fill="#C6E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="257" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="2079" y="237" width="58" height="31" fill="#BCE5E4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="257" text-anchor="middle" fill="#111111">3.2x</text>
+<rect x="2137" y="237" width="58" height="31" fill="#A7DDD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="257" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="2195" y="237" width="58" height="31" fill="#BFE6E5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="257" text-anchor="middle" fill="#111111">3.1x</text>
+<text class="axis" x="155" y="288" text-anchor="end">ZDPD</text>
+<rect x="165" y="268" width="58" height="31" fill="#62B6BF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="288" text-anchor="middle" fill="#ffffff">7.3x</text>
+<rect x="223" y="268" width="58" height="31" fill="#97D7D2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="288" text-anchor="middle" fill="#111111">4.9x</text>
+<rect x="281" y="268" width="58" height="31" fill="#7FCEC6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="288" text-anchor="middle" fill="#111111">6.0x</text>
+<rect x="339" y="268" width="58" height="31" fill="#1876AF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="288" text-anchor="middle" fill="#ffffff">10.6x</text>
+<rect x="397" y="268" width="58" height="31" fill="#3690B6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="288" text-anchor="middle" fill="#ffffff">9.3x</text>
+<rect x="455" y="268" width="58" height="31" fill="#0868AC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="288" text-anchor="middle" fill="#ffffff">11.4x</text>
+<rect x="513" y="268" width="58" height="31" fill="#9ED9D5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="288" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="571" y="268" width="58" height="31" fill="#80CEC6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="288" text-anchor="middle" fill="#111111">6.0x</text>
+<rect x="629" y="268" width="58" height="31" fill="#79CAC4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="288" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="687" y="268" width="58" height="31" fill="#52A9BB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="288" text-anchor="middle" fill="#ffffff">8.0x</text>
+<rect x="745" y="268" width="58" height="31" fill="#ABDEDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="288" text-anchor="middle" fill="#111111">4.0x</text>
+<rect x="803" y="268" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="288" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="861" y="268" width="58" height="31" fill="#A7DDD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="288" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="919" y="268" width="58" height="31" fill="#79CAC4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="288" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="977" y="268" width="58" height="31" fill="#6BBEC1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="288" text-anchor="middle" fill="#ffffff">6.9x</text>
+<rect x="1035" y="268" width="58" height="31" fill="#8CD2CC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="288" text-anchor="middle" fill="#111111">5.4x</text>
+<rect x="1093" y="268" width="58" height="31" fill="#ADDFDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="288" text-anchor="middle" fill="#111111">3.9x</text>
+<rect x="1151" y="268" width="58" height="31" fill="#88D1CA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="288" text-anchor="middle" fill="#111111">5.6x</text>
+<rect x="1209" y="268" width="58" height="31" fill="#ACDFDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="288" text-anchor="middle" fill="#111111">3.9x</text>
+<rect x="1267" y="268" width="58" height="31" fill="#ACDFDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="288" text-anchor="middle" fill="#111111">4.0x</text>
+<rect x="1325" y="268" width="58" height="31" fill="#8DD3CD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="288" text-anchor="middle" fill="#111111">5.4x</text>
+<rect x="1383" y="268" width="58" height="31" fill="#ABDEDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="288" text-anchor="middle" fill="#111111">4.0x</text>
+<rect x="1441" y="268" width="58" height="31" fill="#8DD3CD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="288" text-anchor="middle" fill="#111111">5.4x</text>
+<rect x="1499" y="268" width="58" height="31" fill="#79CAC4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="288" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="1557" y="268" width="58" height="31" fill="#C4E8E8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="288" text-anchor="middle" fill="#111111">2.8x</text>
+<rect x="1615" y="268" width="58" height="31" fill="#8AD2CB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="288" text-anchor="middle" fill="#111111">5.5x</text>
+<rect x="1673" y="268" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="288" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="1731" y="268" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="288" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="1789" y="268" width="58" height="31" fill="#A5DCD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="288" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="1847" y="268" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="288" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="1905" y="268" width="58" height="31" fill="#A4DCD8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="288" text-anchor="middle" fill="#111111">4.3x</text>
+<rect x="1963" y="268" width="58" height="31" fill="#9FDAD6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="288" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="2021" y="268" width="58" height="31" fill="#B4E2E0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="288" text-anchor="middle" fill="#111111">3.6x</text>
+<rect x="2079" y="268" width="58" height="31" fill="#B2E1DF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="288" text-anchor="middle" fill="#111111">3.6x</text>
+<rect x="2137" y="268" width="58" height="31" fill="#95D6D1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="288" text-anchor="middle" fill="#111111">5.0x</text>
+<rect x="2195" y="268" width="58" height="31" fill="#90D4CE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="288" text-anchor="middle" fill="#111111">5.2x</text>
+<text class="axis" x="155" y="319" text-anchor="end">Stack-ZDPD</text>
+<rect x="165" y="299" width="58" height="31" fill="#6FC1C1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="319" text-anchor="middle" fill="#ffffff">6.7x</text>
+<rect x="223" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="281" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="339" y="299" width="58" height="31" fill="#0868AC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="319" text-anchor="middle" fill="#ffffff">11.4x</text>
+<rect x="397" y="299" width="58" height="31" fill="#308BB4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="319" text-anchor="middle" fill="#ffffff">9.6x</text>
+<rect x="455" y="299" width="58" height="31" fill="#1472AE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="319" text-anchor="middle" fill="#ffffff">10.8x</text>
+<rect x="513" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="571" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="629" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="687" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="745" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="803" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="861" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="919" y="299" width="58" height="31" fill="#83CFC8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="319" text-anchor="middle" fill="#111111">5.8x</text>
+<rect x="977" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1035" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1093" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1151" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1209" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1267" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1325" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1383" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1441" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1499" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1557" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1615" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1673" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1731" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1789" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1847" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1905" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="1963" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="2021" y="299" width="58" height="31" fill="#B8E3E2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="319" text-anchor="middle" fill="#111111">3.4x</text>
+<rect x="2079" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="2137" y="299" width="58" height="31" fill="#F2F2F2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="319" text-anchor="middle" fill="#666666">N/A</text>
+<rect x="2195" y="299" width="58" height="31" fill="#9AD8D3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="319" text-anchor="middle" fill="#111111">4.8x</text>
+<text class="axis" x="155" y="350" text-anchor="end">AirdPro</text>
+<rect x="165" y="330" width="58" height="31" fill="#62B6BF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="350" text-anchor="middle" fill="#ffffff">7.3x</text>
+<rect x="223" y="330" width="58" height="31" fill="#95D6D1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="350" text-anchor="middle" fill="#111111">5.0x</text>
+<rect x="281" y="330" width="58" height="31" fill="#7FCDC6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="350" text-anchor="middle" fill="#111111">6.0x</text>
+<rect x="339" y="330" width="58" height="31" fill="#1876AF" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="350" text-anchor="middle" fill="#ffffff">10.6x</text>
+<rect x="397" y="330" width="58" height="31" fill="#3690B6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="350" text-anchor="middle" fill="#ffffff">9.3x</text>
+<rect x="455" y="330" width="58" height="31" fill="#0868AC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="350" text-anchor="middle" fill="#ffffff">11.4x</text>
+<rect x="513" y="330" width="58" height="31" fill="#9DD9D5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="350" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="571" y="330" width="58" height="31" fill="#7FCEC6" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="350" text-anchor="middle" fill="#111111">6.0x</text>
+<rect x="629" y="330" width="58" height="31" fill="#79CAC4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="350" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="687" y="330" width="58" height="31" fill="#50A7BB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="350" text-anchor="middle" fill="#ffffff">8.1x</text>
+<rect x="745" y="330" width="58" height="31" fill="#AADEDB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="350" text-anchor="middle" fill="#111111">4.0x</text>
+<rect x="803" y="330" width="58" height="31" fill="#A6DCD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="350" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="861" y="330" width="58" height="31" fill="#A7DDD9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="350" text-anchor="middle" fill="#111111">4.2x</text>
+<rect x="919" y="330" width="58" height="31" fill="#78C9C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="350" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="977" y="330" width="58" height="31" fill="#6BBEC1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="350" text-anchor="middle" fill="#ffffff">6.9x</text>
+<rect x="1035" y="330" width="58" height="31" fill="#8AD2CC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="350" text-anchor="middle" fill="#111111">5.5x</text>
+<rect x="1093" y="330" width="58" height="31" fill="#ADDFDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="350" text-anchor="middle" fill="#111111">3.9x</text>
+<rect x="1151" y="330" width="58" height="31" fill="#86D0C9" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="350" text-anchor="middle" fill="#111111">5.7x</text>
+<rect x="1209" y="330" width="58" height="31" fill="#ACDFDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="350" text-anchor="middle" fill="#111111">3.9x</text>
+<rect x="1267" y="330" width="58" height="31" fill="#ABDEDC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="350" text-anchor="middle" fill="#111111">4.0x</text>
+<rect x="1325" y="330" width="58" height="31" fill="#8CD2CC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="350" text-anchor="middle" fill="#111111">5.4x</text>
+<rect x="1383" y="330" width="58" height="31" fill="#ABDEDB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="350" text-anchor="middle" fill="#111111">4.0x</text>
+<rect x="1441" y="330" width="58" height="31" fill="#8CD2CC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="350" text-anchor="middle" fill="#111111">5.4x</text>
+<rect x="1499" y="330" width="58" height="31" fill="#77C9C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="350" text-anchor="middle" fill="#ffffff">6.4x</text>
+<rect x="1557" y="330" width="58" height="31" fill="#C2E7E7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="350" text-anchor="middle" fill="#111111">2.9x</text>
+<rect x="1615" y="330" width="58" height="31" fill="#89D1CB" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="350" text-anchor="middle" fill="#111111">5.6x</text>
+<rect x="1673" y="330" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="350" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="1731" y="330" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="350" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="1789" y="330" width="58" height="31" fill="#9FDAD5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="350" text-anchor="middle" fill="#111111">4.5x</text>
+<rect x="1847" y="330" width="58" height="31" fill="#A8DDDA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="350" text-anchor="middle" fill="#111111">4.1x</text>
+<rect x="1905" y="330" width="58" height="31" fill="#9ED9D5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="350" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="1963" y="330" width="58" height="31" fill="#94D5D0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="350" text-anchor="middle" fill="#111111">5.1x</text>
+<rect x="2021" y="330" width="58" height="31" fill="#B1E1DE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="350" text-anchor="middle" fill="#111111">3.7x</text>
+<rect x="2079" y="330" width="58" height="31" fill="#AEDFDD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="350" text-anchor="middle" fill="#111111">3.8x</text>
+<rect x="2137" y="330" width="58" height="31" fill="#94D6D0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="350" text-anchor="middle" fill="#111111">5.0x</text>
+<rect x="2195" y="330" width="58" height="31" fill="#90D4CE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="350" text-anchor="middle" fill="#111111">5.2x</text>
+<text class="axis" x="155" y="381" text-anchor="end">TrackCodec</text>
+<rect x="165" y="361" width="58" height="31" fill="#4CA3BA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="194.00" y="381" text-anchor="middle" fill="#ffffff">8.3x</text>
+<rect x="223" y="361" width="58" height="31" fill="#79CAC4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="252.00" y="381" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="281" y="361" width="58" height="31" fill="#6EC1C1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="310.00" y="381" text-anchor="middle" fill="#ffffff">6.8x</text>
+<rect x="339" y="361" width="58" height="31" fill="#1270AE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="368.00" y="381" text-anchor="middle" fill="#ffffff">10.9x</text>
+<rect x="397" y="361" width="58" height="31" fill="#308BB4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="426.00" y="381" text-anchor="middle" fill="#ffffff">9.6x</text>
+<rect x="455" y="361" width="58" height="31" fill="#1E7BB1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="484.00" y="381" text-anchor="middle" fill="#ffffff">10.4x</text>
+<rect x="513" y="361" width="58" height="31" fill="#8FD4CE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="542.00" y="381" text-anchor="middle" fill="#111111">5.3x</text>
+<rect x="571" y="361" width="58" height="31" fill="#6BBEC1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="600.00" y="381" text-anchor="middle" fill="#ffffff">6.9x</text>
+<rect x="629" y="361" width="58" height="31" fill="#6FC1C1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="658.00" y="381" text-anchor="middle" fill="#ffffff">6.7x</text>
+<rect x="687" y="361" width="58" height="31" fill="#338DB5" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="716.00" y="381" text-anchor="middle" fill="#ffffff">9.5x</text>
+<rect x="745" y="361" width="58" height="31" fill="#93D5D0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="774.00" y="381" text-anchor="middle" fill="#111111">5.1x</text>
+<rect x="803" y="361" width="58" height="31" fill="#8ED3CD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="832.00" y="381" text-anchor="middle" fill="#111111">5.3x</text>
+<rect x="861" y="361" width="58" height="31" fill="#A4DCD8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="890.00" y="381" text-anchor="middle" fill="#111111">4.3x</text>
+<rect x="919" y="361" width="58" height="31" fill="#68BBC0" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="948.00" y="381" text-anchor="middle" fill="#ffffff">7.1x</text>
+<rect x="977" y="361" width="58" height="31" fill="#4AA1BA" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1006.00" y="381" text-anchor="middle" fill="#ffffff">8.4x</text>
+<rect x="1035" y="361" width="58" height="31" fill="#76C8C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1064.00" y="381" text-anchor="middle" fill="#ffffff">6.4x</text>
+<rect x="1093" y="361" width="58" height="31" fill="#9DD9D4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1122.00" y="381" text-anchor="middle" fill="#111111">4.6x</text>
+<rect x="1151" y="361" width="58" height="31" fill="#70C3C2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1180.00" y="381" text-anchor="middle" fill="#ffffff">6.7x</text>
+<rect x="1209" y="361" width="58" height="31" fill="#9BD8D4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1238.00" y="381" text-anchor="middle" fill="#111111">4.7x</text>
+<rect x="1267" y="361" width="58" height="31" fill="#9BD8D3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1296.00" y="381" text-anchor="middle" fill="#111111">4.7x</text>
+<rect x="1325" y="361" width="58" height="31" fill="#76C7C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1354.00" y="381" text-anchor="middle" fill="#ffffff">6.4x</text>
+<rect x="1383" y="361" width="58" height="31" fill="#9AD8D3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1412.00" y="381" text-anchor="middle" fill="#111111">4.7x</text>
+<rect x="1441" y="361" width="58" height="31" fill="#78C9C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1470.00" y="381" text-anchor="middle" fill="#ffffff">6.3x</text>
+<rect x="1499" y="361" width="58" height="31" fill="#60B5BE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1528.00" y="381" text-anchor="middle" fill="#ffffff">7.4x</text>
+<rect x="1557" y="361" width="58" height="31" fill="#B7E3E1" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1586.00" y="381" text-anchor="middle" fill="#111111">3.4x</text>
+<rect x="1615" y="361" width="58" height="31" fill="#75C7C3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1644.00" y="381" text-anchor="middle" fill="#ffffff">6.5x</text>
+<rect x="1673" y="361" width="58" height="31" fill="#99D7D3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1702.00" y="381" text-anchor="middle" fill="#111111">4.8x</text>
+<rect x="1731" y="361" width="58" height="31" fill="#99D7D3" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1760.00" y="381" text-anchor="middle" fill="#111111">4.8x</text>
+<rect x="1789" y="361" width="58" height="31" fill="#90D4CE" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1818.00" y="381" text-anchor="middle" fill="#111111">5.2x</text>
+<rect x="1847" y="361" width="58" height="31" fill="#97D7D2" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1876.00" y="381" text-anchor="middle" fill="#111111">4.9x</text>
+<rect x="1905" y="361" width="58" height="31" fill="#8ED3CD" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1934.00" y="381" text-anchor="middle" fill="#111111">5.3x</text>
+<rect x="1963" y="361" width="58" height="31" fill="#7BCCC4" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="1992.00" y="381" text-anchor="middle" fill="#111111">6.2x</text>
+<rect x="2021" y="361" width="58" height="31" fill="#A5DCD8" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2050.00" y="381" text-anchor="middle" fill="#111111">4.3x</text>
+<rect x="2079" y="361" width="58" height="31" fill="#A2DBD7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2108.00" y="381" text-anchor="middle" fill="#111111">4.4x</text>
+<rect x="2137" y="361" width="58" height="31" fill="#82CFC7" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2166.00" y="381" text-anchor="middle" fill="#111111">5.9x</text>
+<rect x="2195" y="361" width="58" height="31" fill="#8AD2CC" stroke="#ffffff" stroke-width="1"/>
+<text class="tiny" x="2224.00" y="381" text-anchor="middle" fill="#111111">5.5x</text>
+<text class="tiny" x="194.00" y="410.00" text-anchor="end" transform="rotate(-55 194.00 410.00)">SZ-File13</text>
+<text class="tiny" x="252.00" y="410.00" text-anchor="end" transform="rotate(-55 252.00 410.00)">SZ-File14</text>
+<text class="tiny" x="310.00" y="410.00" text-anchor="end" transform="rotate(-55 310.00 410.00)">SZ-File15</text>
+<text class="tiny" x="368.00" y="410.00" text-anchor="end" transform="rotate(-55 368.00 410.00)">SZ-File16</text>
+<text class="tiny" x="426.00" y="410.00" text-anchor="end" transform="rotate(-55 426.00 410.00)">SZ-File18</text>
+<text class="tiny" x="484.00" y="410.00" text-anchor="end" transform="rotate(-55 484.00 410.00)">SZ-File2</text>
+<text class="tiny" x="542.00" y="410.00" text-anchor="end" transform="rotate(-55 542.00 410.00)">SZ-File3</text>
+<text class="tiny" x="600.00" y="410.00" text-anchor="end" transform="rotate(-55 600.00 410.00)">SZ-File4</text>
+<text class="tiny" x="658.00" y="410.00" text-anchor="end" transform="rotate(-55 658.00 410.00)">SZ-File5</text>
+<text class="tiny" x="716.00" y="410.00" text-anchor="end" transform="rotate(-55 716.00 410.00)">SZ-File6</text>
+<text class="tiny" x="774.00" y="410.00" text-anchor="end" transform="rotate(-55 774.00 410.00)">SZ-LFQ_Orbitrap_AIF_H</text>
+<text class="tiny" x="832.00" y="410.00" text-anchor="end" transform="rotate(-55 832.00 410.00)">SZ-LFQ_Orbitrap_AIF_H</text>
+<text class="tiny" x="890.00" y="410.00" text-anchor="end" transform="rotate(-55 890.00 410.00)">SZ-Set_1_F2</text>
+<text class="tiny" x="948.00" y="410.00" text-anchor="end" transform="rotate(-55 948.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1006.00" y="410.00" text-anchor="end" transform="rotate(-55 1006.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1064.00" y="410.00" text-anchor="end" transform="rotate(-55 1064.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1122.00" y="410.00" text-anchor="end" transform="rotate(-55 1122.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1180.00" y="410.00" text-anchor="end" transform="rotate(-55 1180.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1238.00" y="410.00" text-anchor="end" transform="rotate(-55 1238.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1296.00" y="410.00" text-anchor="end" transform="rotate(-55 1296.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1354.00" y="410.00" text-anchor="end" transform="rotate(-55 1354.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1412.00" y="410.00" text-anchor="end" transform="rotate(-55 1412.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1470.00" y="410.00" text-anchor="end" transform="rotate(-55 1470.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1528.00" y="410.00" text-anchor="end" transform="rotate(-55 1528.00 410.00)">F8-DDA-true</text>
+<text class="tiny" x="1586.00" y="410.00" text-anchor="end" transform="rotate(-55 1586.00 410.00)">F8-E4802</text>
+<text class="tiny" x="1644.00" y="410.00" text-anchor="end" transform="rotate(-55 1644.00 410.00)">F8-E4802</text>
+<text class="tiny" x="1702.00" y="410.00" text-anchor="end" transform="rotate(-55 1702.00 410.00)">F8-E4802</text>
+<text class="tiny" x="1760.00" y="410.00" text-anchor="end" transform="rotate(-55 1760.00 410.00)">F8-E4802</text>
+<text class="tiny" x="1818.00" y="410.00" text-anchor="end" transform="rotate(-55 1818.00 410.00)">F8-E4804-R1</text>
+<text class="tiny" x="1876.00" y="410.00" text-anchor="end" transform="rotate(-55 1876.00 410.00)">F8-E4804-R1</text>
+<text class="tiny" x="1934.00" y="410.00" text-anchor="end" transform="rotate(-55 1934.00 410.00)">F8-E4804-R2</text>
+<text class="tiny" x="1992.00" y="410.00" text-anchor="end" transform="rotate(-55 1992.00 410.00)">F8-E4804-cent</text>
+<text class="tiny" x="2050.00" y="410.00" text-anchor="end" transform="rotate(-55 2050.00 410.00)">F8-E4805-DIA</text>
+<text class="tiny" x="2108.00" y="410.00" text-anchor="end" transform="rotate(-55 2108.00 410.00)">F8-E4805-R2</text>
+<text class="tiny" x="2166.00" y="410.00" text-anchor="end" transform="rotate(-55 2166.00 410.00)">F8-E4805-R2</text>
+<text class="tiny" x="2224.00" y="410.00" text-anchor="end" transform="rotate(-55 2224.00 410.00)">F8-ETD</text>
+</svg>

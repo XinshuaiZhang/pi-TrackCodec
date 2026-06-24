@@ -1,0 +1,15 @@
+section,label,display_name,family,color_hex,n_files,mean_cr,median_cr,min_cr,max_cr,relative_to_reference_mean_pct,bar_annotation
+MS1,gzip,gzip level 6 raw float64,raw_backend,#C7E4F2,24,1.920283,1.912857,1.388320,2.398793,-69.491517,1.92x
+MS1,zlib,zlib level 6 raw float64,raw_backend,#9ECAE1,24,1.920283,1.912857,1.388321,2.398793,-69.491515,1.92x
+MS1,zstd-9,zstd level 9 raw float64,raw_backend,#6BAED6,24,1.745827,1.676886,1.386640,2.265636,-72.263180,1.75x
+MS1,airdpro_default,AirdPro Default,baseline,#00A087,36,6.294258,6.049171,2.476208,15.295880,0.000000,6.29x
+MS1,zdpd_baseline,ZDPD,baseline,#72B7B2,36,6.294258,6.049171,2.476208,15.295880,0.000000,6.29x
+MS1,ours_eqfidelity,TrackCodec eq-fidelity,trackcodec,#F58518,8,6.406875,6.846500,1.944000,10.346000,1.789204,6.41x; +1.8% vs ZDPD
+MS1,ours_strict_q6,TrackCodec strict q6,trackcodec,#3C5488,8,5.735125,6.255500,1.958000,9.745000,-8.883221,5.74x; -8.9% vs ZDPD
+MS1,ours_archive_fidelity,TrackCodec archive fidelity,trackcodec,#E45756,36,6.775468,6.694627,2.525314,12.251665,7.645224,6.78x; +7.6% vs ZDPD
+MS2,gzip,gzip level 6 raw float64,raw_backend,#C7E4F2,23,1.957148,1.945070,1.373912,2.451197,-42.667480,1.96x
+MS2,zlib,zlib level 6 raw float64,raw_backend,#9ECAE1,23,1.957148,1.945070,1.373913,2.451197,-42.667471,1.96x
+MS2,zstd-9,zstd level 9 raw float64,raw_backend,#6BAED6,23,2.139311,2.138580,1.484853,3.105967,-37.331213,2.14x
+MS2,zdpd_baseline,ZDPD,baseline,#72B7B2,35,3.413678,2.723917,1.982463,9.120902,0.000000,3.41x
+MS2,airdpro_default,AirdPro Default,baseline,#00A087,35,3.413678,2.723917,1.982463,9.120902,-0.000008,3.41x
+MS2,ours_eqfidelity,TrackCodec eq-fidelity,trackcodec,#F58518,35,4.169296,3.334714,2.754567,11.632547,22.135018,4.17x; +22.1% vs ZDPD

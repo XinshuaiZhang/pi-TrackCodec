@@ -1,0 +1,20 @@
+﻿{
+  "n_files": 36,
+  "n_section_rows": 72,
+  "n_component_rows": 216,
+  "missing_stats": [],
+  "ms1_aggregate_cr": 7.459827082580856,
+  "ms2_aggregate_cr": 4.897316599182558,
+  "ms2_nonzero_files": 35,
+  "tables": {
+    "section": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_ms1_ms2_section_benchmark.csv",
+    "aggregate": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_ms1_ms2_section_aggregate.csv",
+    "components": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_component_breakdown.csv",
+    "markdown": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_ms1_ms2_section_benchmark.md",
+    "html": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_ms1_ms2_section_benchmark.html"
+  },
+  "plots": {
+    "ratios": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\trackcodec_ms1_ms2_section_ratios.svg",
+    "sizes": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\trackcodec_ms1_ms2_aggregate_sizes.svg"
+  }
+}

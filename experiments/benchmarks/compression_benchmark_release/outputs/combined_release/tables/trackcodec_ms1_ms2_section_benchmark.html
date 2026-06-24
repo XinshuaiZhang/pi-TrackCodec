@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TrackCodec MS1/MS2 Section Benchmark</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #1f2933; }
+    main { max-width: 1280px; margin: 0 auto; padding: 26px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .meta { color: #52606d; }
+    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 18px 0 24px; }
+    .tile { background: #fff; border: 1px solid #d9e2ec; border-radius: 6px; padding: 12px; }
+    .tile b { display: block; font-size: 22px; }
+    .figure { background: #fff; border: 1px solid #d9e2ec; border-radius: 6px; padding: 14px; margin: 16px 0; overflow-x: auto; }
+    img { width: 100%; min-width: 760px; height: auto; display: block; }
+    code { background: #eef2f7; padding: 1px 4px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>TrackCodec MS1/MS2 Section-Level Benchmark</h1>
+  <p class="meta">TrackCodec-only section summary generated from existing <code>.stats.json</code> files. Other benchmark methods are omitted because they do not expose comparable MS1/MS2 section stats in this run.</p>
+  <div class="summary">
+    <div class="tile"><span>Files</span><b>36</b></div>
+    <div class="tile"><span>MS1 aggregate CR</span><b>7.46x</b></div>
+    <div class="tile"><span>MS2 aggregate CR</span><b>4.90x</b></div>
+    <div class="tile"><span>MS2 nonzero files</span><b>35</b></div>
+  </div>
+  <section class="figure"><h2>Section Compression Ratios</h2><img src="../plots/trackcodec_ms1_ms2_section_ratios.svg" alt="TrackCodec MS1/MS2 section ratios"></section>
+  <section class="figure"><h2>Aggregate Section Sizes</h2><img src="../plots/trackcodec_ms1_ms2_aggregate_sizes.svg" alt="TrackCodec aggregate section sizes"></section>
+  <p class="meta">Tables: <code>trackcodec_ms1_ms2_section_benchmark.csv</code>, <code>trackcodec_ms1_ms2_section_aggregate.csv</code>, and <code>trackcodec_component_breakdown.csv</code>.</p>
+</main>
+</body>
+</html>

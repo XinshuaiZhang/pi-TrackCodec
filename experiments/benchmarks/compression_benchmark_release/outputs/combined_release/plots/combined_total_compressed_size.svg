@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 720" role="img">
+
+<style>
+  .title{font:700 23px Arial,sans-serif;fill:#1f2933}
+  .subtitle{font:12px Arial,sans-serif;fill:#52606d}
+  .axis{font:12px Arial,sans-serif;fill:#374151}
+  .small{font:10px Arial,sans-serif;fill:#374151}
+  .tiny{font:8.5px Arial,sans-serif;fill:#374151}
+  .grid{stroke:#d9e2ec;stroke-width:1;stroke-dasharray:2 5}
+  .axisline{stroke:#7b8794;stroke-width:1.2}
+</style>
+
+<rect x="0" y="0" width="1500" height="720" fill="#ffffff"/>
+<text class="title" x="95" y="38">Total Compressed Size by Method</text>
+<text class="subtitle" x="95" y="62">Labels show value and number of files contributing to each method.</text>
+<line class="grid" x1="95" y1="550.00" x2="1465" y2="550.00"/>
+<line class="axisline" x1="90" y1="550.00" x2="95" y2="550.00"/>
+<text class="axis" x="85" y="554.00" text-anchor="end">0.0</text>
+<line class="grid" x1="95" y1="472.67" x2="1465" y2="472.67"/>
+<line class="axisline" x1="90" y1="472.67" x2="95" y2="472.67"/>
+<text class="axis" x="85" y="476.67" text-anchor="end">25.0</text>
+<line class="grid" x1="95" y1="395.33" x2="1465" y2="395.33"/>
+<line class="axisline" x1="90" y1="395.33" x2="95" y2="395.33"/>
+<text class="axis" x="85" y="399.33" text-anchor="end">50.0</text>
+<line class="grid" x1="95" y1="318.00" x2="1465" y2="318.00"/>
+<line class="axisline" x1="90" y1="318.00" x2="95" y2="318.00"/>
+<text class="axis" x="85" y="322.00" text-anchor="end">75.0</text>
+<line class="grid" x1="95" y1="240.67" x2="1465" y2="240.67"/>
+<line class="axisline" x1="90" y1="240.67" x2="95" y2="240.67"/>
+<text class="axis" x="85" y="244.67" text-anchor="end">100.0</text>
+<line class="grid" x1="95" y1="163.33" x2="1465" y2="163.33"/>
+<line class="axisline" x1="90" y1="163.33" x2="95" y2="163.33"/>
+<text class="axis" x="85" y="167.33" text-anchor="end">125.0</text>
+<line class="grid" x1="95" y1="86.00" x2="1465" y2="86.00"/>
+<line class="axisline" x1="90" y1="86.00" x2="95" y2="86.00"/>
+<text class="axis" x="85" y="90.00" text-anchor="end">150.0</text>
+<line class="axisline" x1="95" y1="86" x2="95" y2="550"/>
+<line class="axisline" x1="95" y1="550" x2="1465" y2="550"/>
+<text class="axis" x="24" y="318.00" text-anchor="middle" transform="rotate(-90 24 318.00)">Total compressed size (GiB)</text>
+<rect x="122.50" y="139.29" width="82.00" height="410.71" fill="#B09C85" fill-opacity="0.86"/>
+<text class="tiny" x="163.50" y="131.29" text-anchor="middle">132.8 GiB</text>
+<text class="tiny" x="163.50" y="144.29" text-anchor="middle">n=36</text>
+<text class="axis" x="163.50" y="666.00" text-anchor="end" transform="rotate(-38 163.50 666.00)">Original mzML</text>
+<rect x="259.50" y="263.80" width="82.00" height="286.20" fill="#4DBBD5" fill-opacity="0.86"/>
+<text class="tiny" x="300.50" y="255.80" text-anchor="middle">92.5 GiB</text>
+<text class="tiny" x="300.50" y="268.80" text-anchor="middle">n=36</text>
+<text class="axis" x="300.50" y="666.00" text-anchor="end" transform="rotate(-38 300.50 666.00)">zlib mzML</text>
+<rect x="396.50" y="348.74" width="82.00" height="201.26" fill="#91D1C2" fill-opacity="0.86"/>
+<text class="tiny" x="437.50" y="340.74" text-anchor="middle">65.1 GiB</text>
+<text class="tiny" x="437.50" y="353.74" text-anchor="middle">n=36</text>
+<text class="axis" x="437.50" y="666.00" text-anchor="end" transform="rotate(-38 437.50 666.00)">gzip mzML</text>
+<rect x="533.50" y="404.74" width="82.00" height="145.26" fill="#3C5488" fill-opacity="0.86"/>
+<text class="tiny" x="574.50" y="396.74" text-anchor="middle">47.0 GiB</text>
+<text class="tiny" x="574.50" y="409.74" text-anchor="middle">n=36</text>
+<text class="axis" x="574.50" y="666.00" text-anchor="end" transform="rotate(-38 574.50 666.00)">Numpress+zlib</text>
+<rect x="670.50" y="388.74" width="82.00" height="161.26" fill="#8491B4" fill-opacity="0.86"/>
+<text class="tiny" x="711.50" y="380.74" text-anchor="middle">52.1 GiB</text>
+<text class="tiny" x="711.50" y="393.74" text-anchor="middle">n=36</text>
+<text class="axis" x="711.50" y="666.00" text-anchor="end" transform="rotate(-38 711.50 666.00)">MassComp</text>
+<rect x="807.50" y="447.02" width="82.00" height="102.98" fill="#00A087" fill-opacity="0.86"/>
+<text class="tiny" x="848.50" y="439.02" text-anchor="middle">33.3 GiB</text>
+<text class="tiny" x="848.50" y="452.02" text-anchor="middle">n=36</text>
+<text class="axis" x="848.50" y="666.00" text-anchor="end" transform="rotate(-38 848.50 666.00)">mspack</text>
+<rect x="944.50" y="476.21" width="82.00" height="73.79" fill="#E64B35" fill-opacity="0.86"/>
+<text class="tiny" x="985.50" y="468.21" text-anchor="middle">23.9 GiB</text>
+<text class="tiny" x="985.50" y="481.21" text-anchor="middle">n=36</text>
+<text class="axis" x="985.50" y="666.00" text-anchor="end" transform="rotate(-38 985.50 666.00)">ZDPD</text>
+<rect x="1081.50" y="536.01" width="82.00" height="13.99" fill="#7E6148" fill-opacity="0.86"/>
+<text class="tiny" x="1122.50" y="528.01" text-anchor="middle">4.5 GiB</text>
+<text class="tiny" x="1122.50" y="541.01" text-anchor="middle">n=7</text>
+<text class="axis" x="1122.50" y="666.00" text-anchor="end" transform="rotate(-38 1122.50 666.00)">Stack-ZDPD</text>
+<rect x="1218.50" y="477.13" width="82.00" height="72.87" fill="#F39B7F" fill-opacity="0.86"/>
+<text class="tiny" x="1259.50" y="469.13" text-anchor="middle">23.6 GiB</text>
+<text class="tiny" x="1259.50" y="482.13" text-anchor="middle">n=36</text>
+<text class="axis" x="1259.50" y="666.00" text-anchor="end" transform="rotate(-38 1259.50 666.00)">AirdPro</text>
+<rect x="1355.50" y="486.27" width="82.00" height="63.73" fill="#DC0000" fill-opacity="0.86"/>
+<text class="tiny" x="1396.50" y="478.27" text-anchor="middle">20.6 GiB</text>
+<text class="tiny" x="1396.50" y="491.27" text-anchor="middle">n=36</text>
+<text class="axis" x="1396.50" y="666.00" text-anchor="end" transform="rotate(-38 1396.50 666.00)">TrackCodec</text>
+</svg>

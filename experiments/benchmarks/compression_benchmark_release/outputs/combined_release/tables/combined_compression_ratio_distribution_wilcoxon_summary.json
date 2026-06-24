@@ -1,0 +1,16 @@
+{
+  "n": 36,
+  "airdpro_median_cr": 5.038002966563727,
+  "trackcodec_median_cr": 6.019893560880101,
+  "airdpro_mean_cr": 5.478975124634664,
+  "trackcodec_mean_cr": 6.223005984232956,
+  "airdpro_aggregate_cr": 5.635926745524553,
+  "trackcodec_aggregate_cr": 6.44444882711793,
+  "paired_gain_mean_pct": 15.153205061421325,
+  "paired_gain_median_pct": 16.38535160451645,
+  "paired_gain_min_pct": -8.530158287908607,
+  "paired_gain_max_pct": 26.594185184862894,
+  "wilcoxon_statistic": 26.0,
+  "wilcoxon_p_value": 1.450279009746182e-06,
+  "rank_biserial": 0.9219219219219219
+}
