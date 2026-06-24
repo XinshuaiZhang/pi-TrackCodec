@@ -1,4 +1,4 @@
-﻿# TrackCodec Public Validation Bundle
+# TrackCodec Public Validation Bundle
 
 This bundle collects the public reproduction code for the manuscript validation figures. It is intentionally organized without date-stamped directory names.
 
@@ -32,8 +32,8 @@ bundled ablation one-shot driver therefore uses `PLOT_PYTHON` for the
 figure-generating steps when that variable is set. A practical setup is:
 
 ```powershell
-$env:TRACKCODEC_PYTHON = "C:\Users\WindowsPengCheng\miniforge3\envs\trackcodec-py311\python.exe"
-$env:PLOT_PYTHON = "C:\Users\WindowsPengCheng\miniforge3\envs\pyopenms-3.5\python.exe"
+$env:TRACKCODEC_PYTHON = "<python-3.11-with-trackcodec-dependencies>"
+$env:PLOT_PYTHON = "<python-with-matplotlib-pandas-numpy>"
 ```
 
 ## One-shot Figure Reproduction

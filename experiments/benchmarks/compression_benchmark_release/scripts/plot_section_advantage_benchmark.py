@@ -5,6 +5,7 @@ import csv
 import html
 import json
 import math
+import os
 import re
 import statistics
 from collections import defaultdict
@@ -119,8 +120,9 @@ MUTED = "#666666"
 GRID = "#D8DEE4"
 PANEL_EDGE = "#BFC5CC"
 
-FONT_REGULAR = Path(r"C:\Windows\Fonts\arial.ttf")
-FONT_BOLD = Path(r"C:\Windows\Fonts\arialbd.ttf")
+FONT_DIR = Path(os.environ.get("WINDIR", "")) / "Fonts"
+FONT_REGULAR = FONT_DIR / "arial.ttf"
+FONT_BOLD = FONT_DIR / "arialbd.ttf"
 
 
 def _font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:

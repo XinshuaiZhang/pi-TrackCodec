@@ -1,9 +1,9 @@
 {
-  "combined_dir": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release",
-  "script": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\scripts\\plot_benchmark_figures_matplotlib.py",
-  "whole_file_csv": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\combined_per_file_methods.csv",
-  "section_csv": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_section_advantage_per_file_methods.csv",
-  "section_aggregate_csv": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_section_advantage_aggregate.csv",
+  "combined_dir": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release",
+  "script": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\scripts\\plot_benchmark_figures_matplotlib.py",
+  "whole_file_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\combined_per_file_methods.csv",
+  "section_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_section_advantage_per_file_methods.csv",
+  "section_aggregate_csv": "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\tables\\trackcodec_section_advantage_aggregate.csv",
   "only_plot": "combined_compression_ratio_distribution",
   "formats": [
     "png",
@@ -14,9 +14,9 @@
   "n_files": 36,
   "outputs": {
     "combined_compression_ratio_distribution": [
-      "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution_matplotlib.png",
-      "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution_matplotlib.pdf",
-      "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution_matplotlib.svg"
+      "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution_matplotlib.png",
+      "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution_matplotlib.pdf",
+      "<TRACKCODEC_PUBLIC_RELEASE>\\experiments\\benchmarks\\compression_benchmark_release\\outputs\\combined_release\\plots\\combined_compression_ratio_distribution_matplotlib.svg"
     ]
   }
 }

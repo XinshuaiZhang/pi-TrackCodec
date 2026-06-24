@@ -1244,7 +1244,7 @@ class _PngCanvas:
     def _font(self, size: float, weight: str = "400"):
         from PIL import ImageFont
 
-        font_dir = Path(os.environ.get("WINDIR", "C:\\Windows")) / "Fonts"
+        font_dir = Path(os.environ.get("WINDIR", "")) / "Fonts"
         font_names = ["arialbd.ttf", "Arialbd.ttf"] if weight in {"700", "bold"} else ["arial.ttf", "Arial.ttf"]
         for name in font_names:
             path = font_dir / name

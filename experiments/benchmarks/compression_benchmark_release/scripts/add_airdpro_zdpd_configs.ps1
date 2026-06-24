@@ -1,5 +1,5 @@
-﻿param(
-    [string]$ConfigPath = "C:\Program Files (x86)\AirdPro6.0.3\ConversionConfig.json",
+param(
+    [string]$ConfigPath = $env:AIRDPRO_CONFIG_JSON,
     [int]$MzPrecision = 0,
     [switch]$KeepZeroIntensity,
     [switch]$DropZeroIntensity,
@@ -8,6 +8,16 @@
 )
 
 $ErrorActionPreference = "Stop"
+
+if ([string]::IsNullOrWhiteSpace($ConfigPath) -and -not [string]::IsNullOrWhiteSpace(${env:ProgramFiles(x86)})) {
+    $candidateConfigPath = Join-Path ${env:ProgramFiles(x86)} "AirdPro6.0.3\ConversionConfig.json"
+    if (Test-Path -LiteralPath $candidateConfigPath) {
+        $ConfigPath = $candidateConfigPath
+    }
+}
+if ([string]::IsNullOrWhiteSpace($ConfigPath)) {
+    throw "Set -ConfigPath or AIRDPRO_CONFIG_JSON to the AirdPro ConversionConfig.json path."
+}
 
 function Clone-JsonObject {
     param([Parameter(Mandatory = $true)] $Object)

@@ -1,6 +1,6 @@
 {
-  "target_table": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\tables\\xic_target_metrics.csv",
-  "out_root": "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500",
+  "target_table": "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\tables\\xic_target_metrics.csv",
+  "out_root": "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500",
   "requested_top_k": [
     500,
     1000,
@@ -11,15 +11,15 @@
   "observed_max_rank": 2500,
   "file_count": 24,
   "artifacts": [
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\tables\\xic_topk_gradient_summary.csv",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\tables\\xic_topk_gradient_all_file_summary.csv",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_p95_area_error.png",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_p95_area_error.pdf",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_pearson_p05.png",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_pearson_p05.pdf",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_apex_shift_p95.png",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_apex_shift_p95.pdf",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\top500_2500_xic_area_error_vs_signal_all_files.png",
-    "D:\\mscodec\\TrackCodec_V6\\TrackCodec_public_release\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\top500_2500_xic_area_error_vs_signal_all_files.pdf"
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\tables\\xic_topk_gradient_summary.csv",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\tables\\xic_topk_gradient_all_file_summary.csv",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_p95_area_error.png",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_p95_area_error.pdf",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_pearson_p05.png",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_pearson_p05.pdf",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_apex_shift_p95.png",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\xic_topk_gradient_apex_shift_p95.pdf",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\top500_2500_xic_area_error_vs_signal_all_files.png",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500\\plots\\xic\\top500_2500_xic_area_error_vs_signal_all_files.pdf"
   ]
 }
