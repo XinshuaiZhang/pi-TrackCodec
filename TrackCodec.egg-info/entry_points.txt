@@ -1,0 +1,4 @@
+[console_scripts]
+trackcodec = TrackCodec.production.cli.main:main
+trackcodec-compress = TrackCodec.production.cli.compress_mzml:main
+trackcodec-decompress = TrackCodec.production.cli.decompress_archive:main
