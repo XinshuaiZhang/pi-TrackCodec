@@ -1,4 +1,4 @@
-﻿# Compression Benchmark Release Bundle
+# Compression Benchmark Release Bundle
 
 This directory is the publication-oriented release bundle for the mass
 spectrometry compression benchmark used in the TrackCodec manuscript.
@@ -90,6 +90,32 @@ $env:AIRDPRO_STACKFIX_EXE = "<workspace_root>\\tools\\AirdPro-5.3.1-stackfix-dda
 
 If `MSCODEC_ROOT` is not provided, the scripts try to locate the workspace
 automatically.
+
+## Benchmark Input Data
+
+The release bundle includes summary CSVs and combined result tables, but it
+does not include the large original mzML/vendor files. Benchmark source-data
+links, expected local mzML paths, and the formal 36-file scope are documented
+at:
+
+```text
+../../../BENCHMARK_DATA_DOWNLOADS.md
+```
+
+For figure-only reproduction, use the included CSVs under:
+
+```text
+inputs/whole_file_summaries/
+outputs/combined_release/
+```
+
+For a heavy rerun, recreate the mzML inputs under the local roots encoded in
+the summary CSV `input_path` column, typically:
+
+```text
+<MSCODEC_ROOT>\benchmark\data_full8\
+<MSCODEC_ROOT>\benchmark\data_StackZDPD\
+```
 
 ## Python Environments
 

@@ -1,0 +1,20 @@
+﻿{
+  "out_root": "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\search_validation_figures",
+  "search_roots": [
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\results\\search_validation_all20"
+  ],
+  "diann": {
+    "diann_file_count": 0,
+    "artifacts": []
+  },
+  "dda_ionquant": {
+    "dda_file_count": 0,
+    "artifacts": []
+  },
+  "public_summary_fallback_artifacts": [
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\search_validation_figures\\plots\\diann\\summary\\diann_search_metric_heatmap.png",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\search_validation_figures\\plots\\diann\\summary\\diann_search_metric_heatmap.pdf",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\search_validation_figures\\plots\\dda_ionquant\\summary\\dda_ionquant_metric_heatmap.png",
+    "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\search_validation_figures\\plots\\dda_ionquant\\summary\\dda_ionquant_metric_heatmap.pdf"
+  ]
+}

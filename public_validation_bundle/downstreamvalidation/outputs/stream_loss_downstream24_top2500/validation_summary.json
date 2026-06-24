@@ -1,0 +1,38 @@
+﻿{
+  "output_root": "<TRACKCODEC_PUBLIC_RELEASE>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500",
+  "requested_stages": [
+    "manifest",
+    "summarize"
+  ],
+  "n_pairs_requested": 24,
+  "decode": {
+    "rows": 0,
+    "ok_or_skipped": 0,
+    "errors": 0
+  },
+  "roundtrip": {
+    "rows": 0,
+    "ok": 0,
+    "pass": 0,
+    "errors": 0,
+    "max_abs_mz_error_max": null,
+    "max_abs_intensity_error_max": null,
+    "tic_rel_error_p95_max": null,
+    "bpi_rel_error_p95_max": null
+  },
+  "xic": {
+    "rows": 24,
+    "ok": 24,
+    "errors": 0,
+    "area_abs_rel_error_p95_max": 0.00010512702639421709,
+    "area_abs_rel_error_max_max": 0.1721911790575473,
+    "pearson_median_min": 0.9999999999999928,
+    "pearson_p05_min": 0.9999961801989756,
+    "apex_shift_p95_max": 0.0
+  },
+  "external_tools": {
+    "rows": 0,
+    "available": 0,
+    "missing": []
+  }
+}

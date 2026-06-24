@@ -13,6 +13,7 @@ import traceback
 from pathlib import Path
 
 import numpy as np
+import psutil
 
 
 def _apply_runtime_thread_caps() -> None:
@@ -300,6 +301,21 @@ def _build_job_env() -> dict[str, str]:
     return env
 
 
+def _background_process_kwargs(platform_name: str | None = None) -> dict:
+    platform_name = os.name if platform_name is None else platform_name
+    if platform_name == "nt":
+        return {
+            "creationflags": (
+                subprocess.CREATE_NEW_PROCESS_GROUP | subprocess.DETACHED_PROCESS
+            )
+        }
+    return {"start_new_session": True}
+
+
+def _pid_is_alive(pid) -> bool:
+    return bool(isinstance(pid, int) and pid > 0 and psutil.pid_exists(pid))
+
+
 def _cmd_launch(args) -> None:
     job_root = Path(args.job_root)
     paths = _job_paths(job_root)
@@ -342,7 +358,7 @@ def _cmd_launch(args) -> None:
             stdin=subprocess.DEVNULL,
             stdout=stdout_handle,
             stderr=stderr_handle,
-            start_new_session=True,
+            **_background_process_kwargs(),
         )
 
     status_payload.update(
@@ -363,14 +379,7 @@ def _cmd_status(args) -> None:
         raise SystemExit(f"job status file not found: {status_path}")
     payload = json.loads(status_path.read_text(encoding="utf-8"))
     pid = payload.get("pid")
-    pid_alive = False
-    if isinstance(pid, int) and pid > 0:
-        try:
-            os.kill(pid, 0)
-            pid_alive = True
-        except OSError:
-            pid_alive = False
-    payload["pid_alive"] = pid_alive
+    payload["pid_alive"] = _pid_is_alive(pid)
     payload["status_checked_ts"] = _now_iso()
     _write_json_if_needed(payload, args.output_json)
     _print_json(payload)

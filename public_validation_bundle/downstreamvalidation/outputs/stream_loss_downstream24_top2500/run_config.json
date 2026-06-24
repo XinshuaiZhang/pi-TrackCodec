@@ -1,0 +1,18 @@
+{
+  "path_table": "<TRACKCODEC_PARENT>\\public_validation_bundle\\downstreamvalidation\\inputs\\manifests\\downstream24_xic_pairs.csv",
+  "trackcodec_root": "<TRACKCODEC_ROOT>",
+  "output_root": "<TRACKCODEC_PARENT>\\public_validation_bundle\\downstreamvalidation\\outputs\\stream_loss_downstream24_top2500",
+  "stages": [
+    "manifest",
+    "summarize"
+  ],
+  "limit": null,
+  "only": [],
+  "binary_compression": "preserve_template",
+  "xic_top_k": 500,
+  "xic_workers": 1,
+  "xic_peaks_per_scan": 80,
+  "xic_bin_width_da": 0.01,
+  "xic_ppm": 10.0,
+  "reuse_recon_root": null
+}

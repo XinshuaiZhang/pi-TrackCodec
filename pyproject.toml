@@ -34,6 +34,11 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
 
+[project.optional-dependencies]
+pfor = [
+    "pyfastpfor>=1.4.0",
+]
+
 [project.scripts]
 trackcodec = "TrackCodec.production.cli.main:main"
 trackcodec-compress = "TrackCodec.production.cli.compress_mzml:main"

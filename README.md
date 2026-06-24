@@ -20,6 +20,7 @@ TrackCodec_public_release/
   core_methods.py                     Public method/configuration helpers
   setup.py, pyproject.toml            Python packaging metadata
   requirements_trackcodec.txt         Runtime and plotting dependencies
+  requirements_pfor.txt               Optional FastPFor dependency
   requirements.lock                   Version-pinned environment used for smoke tests
   experiments/benchmarks/
     compression_benchmark_release/    Whole-file and section-level benchmark bundle
@@ -35,6 +36,16 @@ TrackCodec requires Python >= 3.10. Python 3.11 is recommended because the
 public bundle includes prebuilt native MS1 speedup modules for CPython 3.11 on
 Windows and Linux.
 
+> **Optional FastPFor integer codec (`pyfastpfor`).** The production presets
+> allow FastPFor candidates (`use_pfor=True`), but `pyfastpfor` is optional.
+> When it is unavailable, adaptive stream selection skips PFor and uses the
+> Brotli/Zstd/bitpack fallback used by the manuscript whole-file benchmark.
+> Install the `pfor` extra only when testing FastPFor candidates or decoding an
+> archive whose stream metadata records `use_pfor=true`. `pyfastpfor` is a C++
+> extension; if no binary wheel is available, installation requires a C++
+> compiler (MSVC Build Tools on Windows, `build-essential` on Linux, or the
+> Xcode command line tools on macOS).
+
 ### 2.1 Standard editable installation
 
 Use this mode when a C++17 compiler is available and native extensions can be
@@ -45,6 +56,16 @@ cd <path-to-TrackCodec_public_release>
 python -m pip install --upgrade pip setuptools wheel
 python -m pip install -e .
 ```
+
+Optional FastPFor support:
+
+```powershell
+python -m pip install -e ".[pfor]"
+```
+
+The base installation intentionally does not build or install `pyfastpfor`.
+The included manuscript benchmark tables were generated with the non-PFor
+adaptive fallback.
 
 On Linux/macOS, this builds the MS1 speedup extension and the optional native
 mzML writer. On Windows, the standard build compiles the required MS1 speedup
@@ -275,6 +296,9 @@ experiments/benchmarks/compression_benchmark_release/
 It contains benchmark execution scripts, copied input summaries, reference
 metadata, combined output tables, and generated paper figures.
 
+Benchmark source-data links, expected local mzML placement, and the formal
+36-file scope are documented in `BENCHMARK_DATA_DOWNLOADS.md`.
+
 ### 4.1 Reproduce whole-file benchmark figures from included tables
 
 Generate the original SVG/HTML figure set:
@@ -415,6 +439,11 @@ FASTA files, and search parameter files. See
 `public_validation_bundle/downstreamvalidation/README.md` for full command
 examples.
 
+Important limitation: the public downstream manifests are sanitized and use
+placeholders such as `<MSCODEC_ROOT>` and `<TRACKCODEC_PARENT>`. They preserve
+the validated file scope, but they do not by themselves ship a complete
+original-mzML plus reconstructed-mzML cohort.
+
 ## 6. Ablation Reproduction
 
 Ablation materials are located at:
@@ -428,6 +457,11 @@ One-shot figure reproduction:
 ```powershell
 python -B "$env:REPO_ROOT\public_validation_bundle\ablation\scripts\run_ablation_unified30.py"
 ```
+
+On this Windows host, the recommended setup is to set `PLOT_PYTHON` to the
+`pyopenms-3.5` environment before running ablation. The one-shot driver uses
+that interpreter for figure-generating steps to avoid a Matplotlib PDF backend
+crash seen in `trackcodec-py311`.
 
 Primary outputs:
 
@@ -467,6 +501,7 @@ The public repository does not include:
 - Large original mzML/raw/vendor files.
 - Third-party executable installers.
 - Licensed or registration-gated software binaries.
+- Downstream FASTA / target-decoy FASTA / MSFragger parameter assets.
 
 ### 7.1 Tool versions used for the manuscript benchmark and validation
 
@@ -498,6 +533,28 @@ Important benchmark normalization choices:
 
 Detailed benchmark command templates and third-party tool notes are in
 `experiments/benchmarks/compression_benchmark_release/README.md`.
+
+### 7.2 Public data and missing assets
+
+The benchmark and validation cohorts are documented by exact file name in:
+
+- `BENCHMARK_DATA_DOWNLOADS.md`
+- `DATA_DOWNLOADS.md`
+- `public_validation_bundle/FIGURE_LINKS_AND_FILE_LISTS.md`
+- `public_validation_bundle/downstreamvalidation/inputs/manifests/`
+- `experiments/benchmarks/compression_benchmark_release/inputs/whole_file_summaries/`
+
+Many source files are public through PRIDE / ProteomeXchange or
+dataset-specific repository mirrors, but this release does not re-host every
+original mzML or vendor raw file. `BENCHMARK_DATA_DOWNLOADS.md` maps the formal
+benchmark files to local V6 mzML paths and public source links. `DATA_DOWNLOADS.md`
+keeps the shared per-file source table for the same 36-file benchmark/downstream
+cohort.
+
+The downstream FASTA, target-decoy FASTA, and MSFragger parameter template are
+also intentionally excluded from the repository. They are workflow assets, not
+codec implementation files, and users may need to substitute
+institution-approved or project-approved database snapshots.
 
 ## 8. Output Index
 
