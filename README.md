@@ -1,6 +1,6 @@
-# TrackCodec Public Release
+# pi-TrackCodec Public Release
 
-TrackCodec is a section-aware mzML archive codec for mass-spectrometry data.
+pi-TrackCodec is a section-aware mzML archive codec for mass-spectrometry data.
 This repository contains the core codec implementation and the public
 reproduction bundles used for the manuscript compression benchmark, downstream
 validation, and ablation analyses.
@@ -32,7 +32,7 @@ TrackCodec_public_release/
 
 ## 2. Installation
 
-TrackCodec requires Python >= 3.10. Python 3.11 is recommended because the
+pi-TrackCodec requires Python >= 3.10. Python 3.11 is recommended because the
 public bundle includes prebuilt native MS1 speedup modules for CPython 3.11 on
 Windows and Linux.
 
@@ -484,14 +484,14 @@ ablation-only `stackzdpd_passthrough` mode in
 
 ## 7. External Tool Requirements
 
-TrackCodec core compression and decompression do not require DIA-NN,
+pi-TrackCodec core compression and decompression do not require DIA-NN,
 MSFragger, Philosopher, IonQuant, AirdPro, MassComp, mspack, or ProteoWizard.
 Those tools are required only for rerunning external-method benchmarks or
 downstream search validations from raw data.
 
 The public repository therefore includes:
 
-- TrackCodec source code.
+- pi-TrackCodec source code.
 - Benchmark/validation/ablation scripts.
 - CSV/JSON/TSV inputs needed for figure reproduction.
 - Generated paper figures.
