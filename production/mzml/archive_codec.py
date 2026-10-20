@@ -803,13 +803,24 @@ def _pack_named_section_files(named_section_paths: List[Tuple[str, Path]], outpu
         offset += size
     header_blob = _json_bytes(header)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("wb") as dst:
-        dst.write(MAGIC)
-        dst.write(struct.pack("<I", len(header_blob)))
-        dst.write(header_blob)
-        for _, path in named_section_paths:
-            with path.open("rb") as src:
-                shutil.copyfileobj(src, dst, length=1024 * 1024)
+    # Write beside the destination and replace it only after the complete
+    # archive has been emitted.  A killed process therefore cannot leave a
+    # seemingly valid but truncated archive at the requested path.
+    tmp_path = output_path.with_name(f".{output_path.name}.tmp.{os.getpid()}.{time.time_ns()}")
+    try:
+        with tmp_path.open("wb") as dst:
+            dst.write(MAGIC)
+            dst.write(struct.pack("<I", len(header_blob)))
+            dst.write(header_blob)
+            for _, path in named_section_paths:
+                with path.open("rb") as src:
+                    shutil.copyfileobj(src, dst, length=1024 * 1024)
+        os.replace(tmp_path, output_path)
+    finally:
+        try:
+            tmp_path.unlink()
+        except FileNotFoundError:
+            pass
     return int(output_path.stat().st_size)
 
 
@@ -3430,7 +3441,7 @@ class MzMLSectionArchiveCodec:
                 mzml_path,
                 self.metadata_codec,
                 self.auxiliary_backend,
-                metadata_cache_root,
+                metadata_cache_root if metadata_cache_root is not None else tmp_dir,
                 metadata_xml_bytes=metadata_xml_bytes,
                 auxiliary_records=auxiliary_records,
             )
@@ -3868,7 +3879,7 @@ class MzMLSectionArchiveCodec:
                         mzml_path,
                         self.metadata_codec,
                         self.auxiliary_backend,
-                        metadata_cache_root,
+                        metadata_cache_root if metadata_cache_root is not None else tmp_dir,
                         metadata_xml_bytes=metadata_xml_bytes,
                         auxiliary_records=auxiliary_records,
                     )
@@ -4048,93 +4059,101 @@ class MzMLSectionArchiveCodec:
             )
             if not parallel_decision.get("enabled", False):
                 stage_timings["parallel_process_mode_suppressed"] = 1.0
-            if parallel_decision.get("enabled", False):
-                return self._encode_file_to_path_parallel(
-                    mzml_path,
-                    output_path,
-                    total_t0=total_t0,
-                    stage_timings=stage_timings,
+            try:
+                if parallel_decision.get("enabled", False):
+                    return self._encode_file_to_path_parallel(
+                        mzml_path,
+                        output_path,
+                        total_t0=total_t0,
+                        stage_timings=stage_timings,
+                        file_type=file_type,
+                        scan_store_root=str(scan_store.root),
+                        ms1_track_store_root=str(track_store_root),
+                        raw_ms1_bytes=raw_ms1_bytes,
+                        raw_ms2_bytes=raw_ms2_bytes,
+                        parallel_decision=parallel_decision,
+                        metadata_cache_root=source_cache_root,
+                        metadata_xml_bytes=metadata_xml_bytes,
+                        auxiliary_records=auxiliary_records,
+                        progress_callback=progress_callback,
+                    )
+                return self._encode_file_to_path_serial_from_scan_store(
+                    mzml_path=mzml_path,
+                    output_path=output_path,
+                    scan_store=scan_store,
+                    track_store_path=track_store_root,
                     file_type=file_type,
-                    scan_store_root=str(scan_store.root),
-                    ms1_track_store_root=str(track_store_root),
                     raw_ms1_bytes=raw_ms1_bytes,
                     raw_ms2_bytes=raw_ms2_bytes,
+                    total_t0=total_t0,
+                    stage_timings=stage_timings,
                     parallel_decision=parallel_decision,
+                    report_progress=report_progress,
                     metadata_cache_root=source_cache_root,
                     metadata_xml_bytes=metadata_xml_bytes,
                     auxiliary_records=auxiliary_records,
-                    progress_callback=progress_callback,
                 )
-            return self._encode_file_to_path_serial_from_scan_store(
-                mzml_path=mzml_path,
-                output_path=output_path,
-                scan_store=scan_store,
-                track_store_path=track_store_root,
-                file_type=file_type,
-                raw_ms1_bytes=raw_ms1_bytes,
-                raw_ms2_bytes=raw_ms2_bytes,
-                total_t0=total_t0,
-                stage_timings=stage_timings,
-                parallel_decision=parallel_decision,
-                report_progress=report_progress,
-                metadata_cache_root=source_cache_root,
-                metadata_xml_bytes=metadata_xml_bytes,
-                auxiliary_records=auxiliary_records,
-            )
+            finally:
+                scan_store.close()
 
+        scan_store = None
         with tempfile.TemporaryDirectory(prefix="trackcodec_scan_store_") as scan_store_tmp:
-            t0 = time.perf_counter()
-            scan_store, metadata_xml_bytes, auxiliary_records = create_memmap_scan_store_with_metadata_from_mzml(
-                mzml_path,
-                file_type,
-                Path(scan_store_tmp) / "store",
-            )
-            stage_timings["load_scans_s"] = time.perf_counter() - t0
-            report_progress("load_scans_done", {"ms1_pct": 0.0, "ms2_pct": 0.0, "metadata_pct": 0.0})
-            raw_ms1_bytes = int(scan_store.raw_ms1_bytes)
-            raw_ms2_bytes = int(scan_store.raw_ms2_bytes)
-            parallel_decision = self._decide_parallel_process_mode(
-                raw_ms1_bytes=raw_ms1_bytes,
-                raw_ms2_bytes=raw_ms2_bytes,
-                input_file_bytes=int(mzml_path.stat().st_size),
-            )
-            if not parallel_decision.get("enabled", False):
-                stage_timings["parallel_process_mode_suppressed"] = 1.0
-
-            if parallel_decision.get("enabled", False):
-                return self._encode_file_to_path_parallel(
+            try:
+                t0 = time.perf_counter()
+                scan_store, metadata_xml_bytes, auxiliary_records = create_memmap_scan_store_with_metadata_from_mzml(
                     mzml_path,
-                    output_path,
-                    total_t0=total_t0,
-                    stage_timings=stage_timings,
-                    file_type=file_type,
-                    scan_store_root=str(scan_store.root),
-                    ms1_track_store_root=str(Path(scan_store_tmp) / "tracks"),
+                    file_type,
+                    Path(scan_store_tmp) / "store",
+                )
+                stage_timings["load_scans_s"] = time.perf_counter() - t0
+                report_progress("load_scans_done", {"ms1_pct": 0.0, "ms2_pct": 0.0, "metadata_pct": 0.0})
+                raw_ms1_bytes = int(scan_store.raw_ms1_bytes)
+                raw_ms2_bytes = int(scan_store.raw_ms2_bytes)
+                parallel_decision = self._decide_parallel_process_mode(
                     raw_ms1_bytes=raw_ms1_bytes,
                     raw_ms2_bytes=raw_ms2_bytes,
+                    input_file_bytes=int(mzml_path.stat().st_size),
+                )
+                if not parallel_decision.get("enabled", False):
+                    stage_timings["parallel_process_mode_suppressed"] = 1.0
+
+                if parallel_decision.get("enabled", False):
+                    return self._encode_file_to_path_parallel(
+                        mzml_path,
+                        output_path,
+                        total_t0=total_t0,
+                        stage_timings=stage_timings,
+                        file_type=file_type,
+                        scan_store_root=str(scan_store.root),
+                        ms1_track_store_root=str(Path(scan_store_tmp) / "tracks"),
+                        raw_ms1_bytes=raw_ms1_bytes,
+                        raw_ms2_bytes=raw_ms2_bytes,
+                        parallel_decision=parallel_decision,
+                        metadata_cache_root=None,
+                        metadata_xml_bytes=metadata_xml_bytes,
+                        auxiliary_records=auxiliary_records,
+                        progress_callback=progress_callback,
+                    )
+
+                return self._encode_file_to_path_serial_from_scan_store(
+                    mzml_path=mzml_path,
+                    output_path=output_path,
+                    scan_store=scan_store,
+                    track_store_path=Path(scan_store_tmp) / "tracks",
+                    file_type=file_type,
+                    raw_ms1_bytes=raw_ms1_bytes,
+                    raw_ms2_bytes=raw_ms2_bytes,
+                    total_t0=total_t0,
+                    stage_timings=stage_timings,
                     parallel_decision=parallel_decision,
+                    report_progress=report_progress,
                     metadata_cache_root=None,
                     metadata_xml_bytes=metadata_xml_bytes,
                     auxiliary_records=auxiliary_records,
-                    progress_callback=progress_callback,
                 )
-
-            return self._encode_file_to_path_serial_from_scan_store(
-                mzml_path=mzml_path,
-                output_path=output_path,
-                scan_store=scan_store,
-                track_store_path=Path(scan_store_tmp) / "tracks",
-                file_type=file_type,
-                raw_ms1_bytes=raw_ms1_bytes,
-                raw_ms2_bytes=raw_ms2_bytes,
-                total_t0=total_t0,
-                stage_timings=stage_timings,
-                parallel_decision=parallel_decision,
-                report_progress=report_progress,
-                metadata_cache_root=None,
-                metadata_xml_bytes=metadata_xml_bytes,
-                auxiliary_records=auxiliary_records,
-            )
+            finally:
+                if scan_store is not None:
+                    scan_store.close()
 
     def encode_file_to_path_from_cache(
         self,
@@ -4152,68 +4171,73 @@ class MzMLSectionArchiveCodec:
         report_progress = _make_progress_reporter(progress_callback, scope="archive")
         track_store_path = Path(ms1_track_store_root) if ms1_track_store_root else None
 
-        t0 = time.perf_counter()
-        scan_store = open_memmap_scan_store(scan_store_root)
-        stage_timings["open_scan_store_s"] = time.perf_counter() - t0
-        file_type = str(scan_store.file_type)
-        metadata_xml_bytes = None
-        auxiliary_records = None
-        metadata_xml_path = Path(scan_store_root) / "metadata_xml.bin"
-        auxiliary_records_path = Path(scan_store_root) / "auxiliary_records.json"
-        if metadata_xml_path.exists() and auxiliary_records_path.exists():
-            try:
-                metadata_xml_bytes = metadata_xml_path.read_bytes()
-                auxiliary_records = json.loads(auxiliary_records_path.read_text(encoding="utf-8"))
-                stage_timings["fused_metadata_cache_available"] = 1.0
-            except Exception:
-                metadata_xml_bytes = None
-                auxiliary_records = None
-        report_progress("load_scans_done", {"ms1_pct": 0.0, "ms2_pct": 0.0, "metadata_pct": 0.0})
+        scan_store = None
+        try:
+            t0 = time.perf_counter()
+            scan_store = open_memmap_scan_store(scan_store_root)
+            stage_timings["open_scan_store_s"] = time.perf_counter() - t0
+            file_type = str(scan_store.file_type)
+            metadata_xml_bytes = None
+            auxiliary_records = None
+            metadata_xml_path = Path(scan_store_root) / "metadata_xml.bin"
+            auxiliary_records_path = Path(scan_store_root) / "auxiliary_records.json"
+            if metadata_xml_path.exists() and auxiliary_records_path.exists():
+                try:
+                    metadata_xml_bytes = metadata_xml_path.read_bytes()
+                    auxiliary_records = json.loads(auxiliary_records_path.read_text(encoding="utf-8"))
+                    stage_timings["fused_metadata_cache_available"] = 1.0
+                except Exception:
+                    metadata_xml_bytes = None
+                    auxiliary_records = None
+            report_progress("load_scans_done", {"ms1_pct": 0.0, "ms2_pct": 0.0, "metadata_pct": 0.0})
 
-        raw_ms1_bytes = int(scan_store.raw_ms1_bytes)
-        raw_ms2_bytes = int(scan_store.raw_ms2_bytes)
-        parallel_decision = self._decide_parallel_process_mode(
-            raw_ms1_bytes=raw_ms1_bytes,
-            raw_ms2_bytes=raw_ms2_bytes,
-            input_file_bytes=int(mzml_path.stat().st_size),
-        )
-        if not parallel_decision.get("enabled", False):
-            stage_timings["parallel_process_mode_suppressed"] = 1.0
-
-        if parallel_decision.get("enabled", False):
-            return self._encode_file_to_path_parallel(
-                mzml_path,
-                output_path,
-                total_t0=total_t0,
-                stage_timings=stage_timings,
-                file_type=file_type,
-                scan_store_root=str(Path(scan_store_root)),
-                ms1_track_store_root=str(track_store_path) if track_store_path is not None else None,
+            raw_ms1_bytes = int(scan_store.raw_ms1_bytes)
+            raw_ms2_bytes = int(scan_store.raw_ms2_bytes)
+            parallel_decision = self._decide_parallel_process_mode(
                 raw_ms1_bytes=raw_ms1_bytes,
                 raw_ms2_bytes=raw_ms2_bytes,
+                input_file_bytes=int(mzml_path.stat().st_size),
+            )
+            if not parallel_decision.get("enabled", False):
+                stage_timings["parallel_process_mode_suppressed"] = 1.0
+
+            if parallel_decision.get("enabled", False):
+                return self._encode_file_to_path_parallel(
+                    mzml_path,
+                    output_path,
+                    total_t0=total_t0,
+                    stage_timings=stage_timings,
+                    file_type=file_type,
+                    scan_store_root=str(Path(scan_store_root)),
+                    ms1_track_store_root=str(track_store_path) if track_store_path is not None else None,
+                    raw_ms1_bytes=raw_ms1_bytes,
+                    raw_ms2_bytes=raw_ms2_bytes,
+                    parallel_decision=parallel_decision,
+                    metadata_cache_root=track_store_path.parent if track_store_path is not None else Path(scan_store_root),
+                    metadata_xml_bytes=metadata_xml_bytes,
+                    auxiliary_records=auxiliary_records,
+                    progress_callback=progress_callback,
+                )
+
+            return self._encode_file_to_path_serial_from_scan_store(
+                mzml_path=mzml_path,
+                output_path=output_path,
+                scan_store=scan_store,
+                track_store_path=track_store_path,
+                file_type=file_type,
+                raw_ms1_bytes=raw_ms1_bytes,
+                raw_ms2_bytes=raw_ms2_bytes,
+                total_t0=total_t0,
+                stage_timings=stage_timings,
                 parallel_decision=parallel_decision,
+                report_progress=report_progress,
                 metadata_cache_root=track_store_path.parent if track_store_path is not None else Path(scan_store_root),
                 metadata_xml_bytes=metadata_xml_bytes,
                 auxiliary_records=auxiliary_records,
-                progress_callback=progress_callback,
             )
-
-        return self._encode_file_to_path_serial_from_scan_store(
-            mzml_path=mzml_path,
-            output_path=output_path,
-            scan_store=scan_store,
-            track_store_path=track_store_path,
-            file_type=file_type,
-            raw_ms1_bytes=raw_ms1_bytes,
-            raw_ms2_bytes=raw_ms2_bytes,
-            total_t0=total_t0,
-            stage_timings=stage_timings,
-            parallel_decision=parallel_decision,
-            report_progress=report_progress,
-            metadata_cache_root=track_store_path.parent if track_store_path is not None else Path(scan_store_root),
-            metadata_xml_bytes=metadata_xml_bytes,
-            auxiliary_records=auxiliary_records,
-        )
+        finally:
+            if scan_store is not None:
+                scan_store.close()
 
     def decode_sections(self, archive_blob: bytes):
         sections = _unpack_named_sections(archive_blob)

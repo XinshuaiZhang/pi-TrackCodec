@@ -1244,7 +1244,7 @@ def _iter_aux_binary_arrays(root) -> List[etree._Element]:
     out = []
     for array_elem in root.xpath(".//mzml:binaryDataArray", namespaces=NS):
         spectrum = array_elem.xpath("ancestor::mzml:spectrum[1]", namespaces=NS)
-        if spectrum:
+        if spectrum and _spectrum_ms_level(spectrum[0]) in (1, 2):
             continue
         out.append(array_elem)
     return out

@@ -49,6 +49,7 @@ FLOAT32_ACCESSION = "MS:1000521"
 FLOAT64_ACCESSION = "MS:1000523"
 ZLIB_ACCESSION = "MS:1000574"
 NO_COMPRESSION_ACCESSION = "MS:1000576"
+SCAN_STORE_SCHEMA_VERSION = 2
 
 
 def _mzml_reader(path: str, *, decode_binary: bool = True):
@@ -145,6 +146,49 @@ class MemmapScanStore:
         self.window_upper = np.load(self.root / self.manifest["window_upper_file"], mmap_mode="r")
         self.ms1_global_indices = np.load(self.root / self.manifest["ms1_indices_file"], mmap_mode="r")
         self.ms2_global_indices = np.load(self.root / self.manifest["ms2_indices_file"], mmap_mode="r")
+
+    def close(self) -> None:
+        """Release all file-backed arrays before a Windows directory cleanup.
+
+        ``numpy.memmap`` keeps a Windows file mapping alive until its backing
+        ``mmap`` object is closed.  The temporary scan-store directory is
+        removed immediately after encoding, so relying on garbage collection
+        leaves files such as ``intensity_data.bin`` locked during cleanup.
+        """
+        names = (
+            "mz_data",
+            "intensity_data",
+            "ms_level",
+            "local_scan_idx",
+            "rts",
+            "offsets",
+            "lengths",
+            "target_mz",
+            "window_target",
+            "window_lower",
+            "window_upper",
+            "ms1_global_indices",
+            "ms2_global_indices",
+        )
+        for name in names:
+            value = getattr(self, name, None)
+            mmap_obj = getattr(value, "_mmap", None)
+            if mmap_obj is not None:
+                try:
+                    mmap_obj.close()
+                except (BufferError, ValueError):
+                    # The array may still have a short-lived exported view;
+                    # dropping our reference lets normal GC finish cleanup.
+                    pass
+            if value is not None:
+                setattr(self, name, None)
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self.close()
+        return False
 
     @property
     def raw_ms1_bytes(self) -> int:
@@ -264,6 +308,14 @@ def _write_json_atomic(path: Path, payload: Dict) -> None:
 
 
 def _scan_store_manifest_complete(store_root: Path, manifest: Dict) -> bool:
+    # The auxiliary-record schema changed when non-MS spectra began using the
+    # same cache. Old caches otherwise look complete but silently omit arrays.
+    try:
+        schema_version = int(manifest.get("scan_store_schema_version", 0))
+    except (TypeError, ValueError):
+        return False
+    if schema_version != SCAN_STORE_SCHEMA_VERSION:
+        return False
     required = [
         "mz_data_file",
         "intensity_data_file",
@@ -290,13 +342,22 @@ def _scan_store_manifest_complete(store_root: Path, manifest: Dict) -> bool:
         path = store_root / str(manifest[key])
         if int(path.stat().st_size) != total_points * np.dtype(np.float64).itemsize:
             return False
+    def _mapped_shape(path: Path) -> tuple[int, ...]:
+        mapped = np.load(path, mmap_mode="r")
+        try:
+            return tuple(int(dim) for dim in mapped.shape)
+        finally:
+            mmap_obj = getattr(mapped, "_mmap", None)
+            if mmap_obj is not None:
+                mmap_obj.close()
+
     try:
-        n_spectra = int(np.load(store_root / manifest["length_file"], mmap_mode="r").shape[0])
-        if int(np.load(store_root / manifest["ms_level_file"], mmap_mode="r").shape[0]) != n_spectra:
+        n_spectra = int(_mapped_shape(store_root / manifest["length_file"])[0])
+        if int(_mapped_shape(store_root / manifest["ms_level_file"])[0]) != n_spectra:
             return False
-        if int(np.load(store_root / manifest["offset_file"], mmap_mode="r").shape[0]) != n_spectra:
+        if int(_mapped_shape(store_root / manifest["offset_file"])[0]) != n_spectra:
             return False
-        if int(np.load(store_root / manifest["local_scan_idx_file"], mmap_mode="r").shape[0]) != n_spectra:
+        if int(_mapped_shape(store_root / manifest["local_scan_idx_file"])[0]) != n_spectra:
             return False
     except Exception:
         return False
@@ -578,6 +639,7 @@ def _scan_store_manifest(
     builder: str,
 ) -> Dict:
     return {
+        "scan_store_schema_version": SCAN_STORE_SCHEMA_VERSION,
         "file_type": str(file_type),
         "source_file": str(mzml_path),
         "include_ms1": bool(include_ms1),
@@ -696,6 +758,22 @@ def _create_memmap_scan_store_from_mzml_fused(
                 spectrum = elem
                 ms_level = _spectrum_ms_level_elem(spectrum)
                 if ms_level not in (1, 2):
+                    array_list = _direct_child(spectrum, BINARY_DATA_ARRAY_LIST_TAG)
+                    if array_list is not None:
+                        for array_elem in array_list:
+                            if array_elem.tag != BINARY_DATA_ARRAY_TAG:
+                                continue
+                            binary = _direct_child(array_elem, BINARY_TAG)
+                            auxiliary_records.append(
+                                {
+                                    "encoded_length": array_elem.get("encodedLength", "0"),
+                                    "binary_text": binary.text or "" if binary is not None else "",
+                                    "cv_accessions": _cv_accessions(array_elem),
+                                    "array_length": array_elem.get("arrayLength", "0"),
+                                    "chromatogram_id": None,
+                                    "spectrum_id": spectrum.get("id"),
+                                }
+                            )
                     spectrum.clear()
                     while spectrum.getprevious() is not None:
                         del spectrum.getparent()[0]

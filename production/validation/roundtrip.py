@@ -26,6 +26,17 @@ MZML_NS = NS["mzml"]
 INTENSITY_ARRAY_ACCESSION = "MS:1000515"
 FLOAT32_ACCESSION = "MS:1000521"
 FLOAT64_ACCESSION = "MS:1000523"
+
+# These cvParams are recalculated from reconstructed arrays by mzML writers;
+# their numeric text is not stable metadata and must not make a round-trip hash
+# fail when all encoded arrays and structural attributes match.
+DERIVED_SPECTRUM_CV_ACCESSIONS = {
+    "MS:1000285",  # total ion current
+    "MS:1000504",  # base peak m/z
+    "MS:1000505",  # base peak intensity
+    "MS:1000527",  # highest observed m/z
+    "MS:1000528",  # lowest observed m/z
+}
 INTENSITY_DTYPE_LABELS = {
     FLOAT32_ACCESSION: "float32",
     FLOAT64_ACCESSION: "float64",
@@ -86,6 +97,12 @@ def _iter_spectra(path: Path):
     ) as reader:
         for spec in reader:
             level = int(spec.get("ms level", 0))
+            # pyteomics iterates chromatograms and non-MS spectra (for example
+            # wavelength spectra) as well as mass spectra.  Those records have
+            # no ``ms level`` and use the auxiliary-record path, so only MS1
+            # and MS2 arrays belong in this numeric comparison.
+            if level not in (1, 2):
+                continue
             yield {
                 "id": spec.get("id"),
                 "ms_level": level,
@@ -133,6 +150,8 @@ def _hash_start_token(hasher, elem, *, binary_stripped: bool) -> None:
     attrs = []
     for key, value in elem.attrib.items():
         attr_key = _attr_name(str(key))
+        if local == "cvParam" and attr_key == "value" and elem.get("accession") in DERIVED_SPECTRUM_CV_ACCESSIONS:
+            value = "<derived>"
         attr_value = "0" if binary_stripped and local == "binaryDataArray" and attr_key == "encodedLength" else str(value)
         attrs.append((attr_key, attr_value))
     hasher.update(b"S|")
@@ -221,7 +240,7 @@ def _xml_structure_summary(path: Path) -> dict:
     chromatogram_count = 0
     aux_binary_array_count = 0
     aux_binary_nonempty_count = 0
-    spectrum_depth = 0
+    spectrum_levels: list[int | None] = []
     binary_array_stack: list[dict] = []
     dtype_counts: dict[str, int] = {}
     dtype_accession_counts: dict[str, int] = {}
@@ -239,18 +258,27 @@ def _xml_structure_summary(path: Path) -> dict:
         local = _local_name(elem.tag)
         if event == "start":
             if local == "spectrum":
-                spectrum_depth += 1
+                spectrum_levels.append(None)
             elif local == "chromatogram":
                 chromatogram_count += 1
             elif local == "binaryDataArray":
+                spectrum_level = spectrum_levels[-1] if spectrum_levels else None
                 binary_array_stack.append(
                     {
-                        "under_spectrum": spectrum_depth > 0,
+                        "primary_spectrum": spectrum_level in (1, 2),
                         "cv_accessions": set(),
                         "encoded_length": elem.get("encodedLength", "0"),
                         "binary_text": "",
                     }
                 )
+            elif local == "cvParam" and not binary_array_stack:
+                accession = elem.get("accession")
+                if accession:
+                    if accession == "MS:1000511" and spectrum_levels:
+                        try:
+                            spectrum_levels[-1] = int(float(elem.get("value", "0")))
+                        except (TypeError, ValueError):
+                            spectrum_levels[-1] = None
             elif local == "cvParam" and binary_array_stack:
                 accession = elem.get("accession")
                 if accession:
@@ -267,7 +295,7 @@ def _xml_structure_summary(path: Path) -> dict:
                 _hash_start_token(without_binary_arrays_hash, elem, binary_stripped=False)
             continue
 
-        if local == "binary" and binary_array_stack and not binary_array_stack[-1]["under_spectrum"]:
+        if local == "binary" and binary_array_stack and not binary_array_stack[-1]["primary_spectrum"]:
             binary_array_stack[-1]["binary_text"] = elem.text or ""
 
         if strip_skip_depth > 0:
@@ -282,13 +310,13 @@ def _xml_structure_summary(path: Path) -> dict:
 
         if local == "binaryDataArray":
             info = binary_array_stack.pop() if binary_array_stack else {
-                "under_spectrum": False,
+                "primary_spectrum": False,
                 "cv_accessions": set(),
                 "encoded_length": "0",
                 "binary_text": "",
             }
             accessions = set(info["cv_accessions"])
-            if info["under_spectrum"]:
+            if info["primary_spectrum"]:
                 if INTENSITY_ARRAY_ACCESSION in accessions:
                     total_intensity_arrays += 1
                     dtype_accession = "unknown"
@@ -310,7 +338,8 @@ def _xml_structure_summary(path: Path) -> dict:
                 aux_binary_raw_hash.update(binary_text.encode("utf-8"))
                 aux_binary_raw_hash.update(b"\n")
         elif local == "spectrum":
-            spectrum_depth -= 1
+            if spectrum_levels:
+                spectrum_levels.pop()
 
         elem.clear()
         parent = elem.getparent()
@@ -714,6 +743,46 @@ def compare_files(
     }
 
 
+def evaluate_roundtrip(
+    roundtrip: dict,
+    *,
+    mz_error_ceiling: float = 5e-7,
+    intensity_error_ceiling_float64: float = 0.05,
+    ceiling_eps: float = 1e-10,
+) -> dict:
+    """Attach a strict pass/fail result to numeric, structural, and auxiliary checks."""
+    effective_intensity_ceiling = float(
+        roundtrip.get("effective_intensity_error_ceiling", intensity_error_ceiling_float64)
+    )
+    mz_numeric_ok = float(roundtrip.get("max_abs_mz_error", float("inf"))) <= float(mz_error_ceiling) + float(ceiling_eps)
+    intensity_numeric_ok = float(roundtrip.get("max_abs_intensity_error", float("inf"))) <= effective_intensity_ceiling + float(ceiling_eps)
+    structure_ok = all(
+        int(roundtrip.get(key, 0)) == 0
+        for key in (
+            "missing_original_spectra",
+            "missing_reconstructed_spectra",
+            "spectrum_id_mismatch_count",
+            "ms_level_mismatch_count",
+            "rt_mismatch_count",
+            "array_length_mismatch_count",
+            "nonzero_count_mismatch_count",
+        )
+    )
+    auxiliary_ok = bool(roundtrip.get("aux_counts_match", False)) and bool(
+        roundtrip.get("aux_binary_raw_equal", False)
+    )
+    roundtrip["mz_numeric_within_ceiling"] = bool(mz_numeric_ok)
+    roundtrip["intensity_numeric_within_ceiling"] = bool(intensity_numeric_ok)
+    roundtrip["structure_within_ceiling"] = bool(structure_ok)
+    roundtrip["auxiliary_within_ceiling"] = bool(auxiliary_ok)
+    roundtrip["mz_within_ceiling"] = bool(structure_ok and mz_numeric_ok)
+    roundtrip["intensity_within_ceiling"] = bool(structure_ok and intensity_numeric_ok)
+    roundtrip["roundtrip_pass"] = bool(
+        structure_ok and mz_numeric_ok and intensity_numeric_ok and auxiliary_ok
+    )
+    return roundtrip
+
+
 def main():
     from TrackCodec.production.mzml.archive_codec import MzMLSectionArchiveCodec
 
@@ -749,26 +818,11 @@ def main():
         "intensity_error_ceiling_float32": args.intensity_error_ceiling_float32,
         "ceiling_eps": args.ceiling_eps,
     }
-    mz_numeric_ok = summary["roundtrip"]["max_abs_mz_error"] <= (args.mz_error_ceiling + args.ceiling_eps)
-    intensity_numeric_ok = summary["roundtrip"]["max_abs_intensity_error"] <= (
-        float(summary["roundtrip"]["effective_intensity_error_ceiling"]) + args.ceiling_eps
-    )
-    structure_ok = (
-        int(summary["roundtrip"].get("missing_original_spectra", 0)) == 0
-        and int(summary["roundtrip"].get("missing_reconstructed_spectra", 0)) == 0
-        and int(summary["roundtrip"].get("spectrum_id_mismatch_count", 0)) == 0
-        and int(summary["roundtrip"].get("ms_level_mismatch_count", 0)) == 0
-        and int(summary["roundtrip"].get("rt_mismatch_count", 0)) == 0
-        and int(summary["roundtrip"].get("array_length_mismatch_count", 0)) == 0
-    )
-    summary["roundtrip"]["mz_numeric_within_ceiling"] = bool(mz_numeric_ok)
-    summary["roundtrip"]["intensity_numeric_within_ceiling"] = bool(intensity_numeric_ok)
-    summary["roundtrip"]["structure_within_ceiling"] = bool(structure_ok)
-    summary["roundtrip"]["mz_within_ceiling"] = bool(structure_ok and mz_numeric_ok)
-    summary["roundtrip"]["intensity_within_ceiling"] = bool(structure_ok and intensity_numeric_ok)
-    summary["roundtrip"]["roundtrip_pass"] = (
-        bool(summary["roundtrip"]["mz_within_ceiling"])
-        and bool(summary["roundtrip"]["intensity_within_ceiling"])
+    evaluate_roundtrip(
+        summary["roundtrip"],
+        mz_error_ceiling=args.mz_error_ceiling,
+        intensity_error_ceiling_float64=args.intensity_error_ceiling,
+        ceiling_eps=args.ceiling_eps,
     )
     summary["intensity_error_ceiling_policy"] = summary["roundtrip"]["intensity_error_ceiling_policy"]
     summary["effective_intensity_error_ceiling"] = summary["roundtrip"]["effective_intensity_error_ceiling"]

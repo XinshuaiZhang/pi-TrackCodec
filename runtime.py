@@ -121,6 +121,12 @@ def _get_compare_files():
     return compare_files
 
 
+def _get_roundtrip_evaluator():
+    from TrackCodec.production.validation.roundtrip import evaluate_roundtrip
+
+    return evaluate_roundtrip
+
+
 def _resolve_ms1_island_workers(requested: int | None) -> int:
     if requested is not None:
         return max(1, int(requested))
@@ -234,6 +240,13 @@ def _cmd_validate(args) -> None:
     }
 
     if args.level == "quick":
+        payload["archive_check_pass"] = True
+        payload["comparison_performed"] = False
+        payload["validation_scope"] = "archive_self_consistency_only"
+        payload["validation_note"] = (
+            "Quick mode validates the archive container, section boundaries, and decodable metadata headers. "
+            "It does not read the original mzML and does not compare reconstructed arrays or auxiliary binaries."
+        )
         if args.output_mzml:
             reconstructed = codec.decode_to_mzml_file(args.archive, args.output_mzml)
             payload["output_mzml"] = str(reconstructed)
@@ -244,33 +257,45 @@ def _cmd_validate(args) -> None:
     if not args.original_mzml:
         raise SystemExit("--original-mzml is required for --level full")
 
-    if args.output_mzml:
-        reconstructed_path = Path(args.output_mzml)
-        reconstructed_path.parent.mkdir(parents=True, exist_ok=True)
-        codec.decode_to_mzml_file(
-            args.archive,
-            reconstructed_path,
-            binary_compression=args.binary_compression,
-        )
-    else:
-        tmp_dir = tempfile.TemporaryDirectory(prefix="trackcodec_validate_")
-        reconstructed_path = Path(tmp_dir.name) / f"{Path(args.archive).stem}.reconstructed.mzML"
+    tmp_dir = None
+    try:
+        if args.output_mzml:
+            reconstructed_path = Path(args.output_mzml)
+            reconstructed_path.parent.mkdir(parents=True, exist_ok=True)
+        else:
+            tmp_dir = tempfile.TemporaryDirectory(prefix="trackcodec_validate_")
+            reconstructed_path = Path(tmp_dir.name) / f"{Path(args.archive).stem}.reconstructed.mzML"
         codec.decode_to_mzml_file(
             args.archive,
             reconstructed_path,
             binary_compression=args.binary_compression,
         )
 
-    compare_files = _get_compare_files()
-    roundtrip = compare_files(
-        Path(args.original_mzml),
-        reconstructed_path,
-        per_spectrum_csv=Path(args.per_spectrum_csv) if args.per_spectrum_csv else None,
-    )
-    payload["output_mzml"] = str(reconstructed_path)
-    payload["roundtrip"] = roundtrip
-    _write_json_if_needed(payload, args.summary_json)
-    _print_json(payload)
+        compare_files = _get_compare_files()
+        roundtrip = compare_files(
+            Path(args.original_mzml),
+            reconstructed_path,
+            per_spectrum_csv=Path(args.per_spectrum_csv) if args.per_spectrum_csv else None,
+            intensity_error_ceiling_float64=float(args.intensity_error_ceiling),
+            intensity_error_ceiling_float32=float(args.intensity_error_ceiling_float32),
+        )
+        evaluate_roundtrip = _get_roundtrip_evaluator()
+        evaluate_roundtrip(
+            roundtrip,
+            mz_error_ceiling=float(args.mz_error_ceiling),
+            intensity_error_ceiling_float64=float(args.intensity_error_ceiling),
+            ceiling_eps=float(args.ceiling_eps),
+        )
+        payload["output_mzml"] = str(reconstructed_path)
+        payload["roundtrip"] = roundtrip
+        payload["validation_pass"] = bool(roundtrip["roundtrip_pass"])
+        _write_json_if_needed(payload, args.summary_json)
+        _print_json(payload)
+        if not payload["validation_pass"]:
+            raise SystemExit(1)
+    finally:
+        if tmp_dir is not None:
+            tmp_dir.cleanup()
 
 
 def _job_paths(job_root: Path) -> dict[str, Path]:
@@ -478,6 +503,10 @@ def build_parser(*, include_job_control: bool = True) -> argparse.ArgumentParser
     validate.add_argument("--binary-compression", choices=("preserve_template", "none", "zlib"), default="preserve_template")
     validate.add_argument("--summary-json", required=False)
     validate.add_argument("--per-spectrum-csv", required=False)
+    validate.add_argument("--mz-error-ceiling", type=float, default=5e-7)
+    validate.add_argument("--intensity-error-ceiling", type=float, default=0.05)
+    validate.add_argument("--intensity-error-ceiling-float32", type=float, default=0.1)
+    validate.add_argument("--ceiling-eps", type=float, default=1e-10)
     validate.add_argument("--section-workers", type=int, default=None)
     validate.add_argument("--ms2-segment-workers", type=int, default=None)
     validate.add_argument("--ms1-island-workers", type=int, default=None)
